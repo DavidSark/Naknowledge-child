@@ -5,8 +5,12 @@
    
     <?php while(have_posts()): the_post();?>
     <div class="">
-        <h1 class="text-red-800"><?php the_title()?></h1>
+        <h1 class="titre_article">Test<?php the_title()?></h1>
 
+        <p> 
+            <img src="<?php the_post_thumbnail_url(); ?> " alt="" class="image"/>
+        </p>
+       
         <?php the_content()?>
         <?php endwhile ?>
     </div>

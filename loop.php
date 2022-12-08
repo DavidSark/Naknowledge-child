@@ -6,9 +6,9 @@
             
 
             <div class="px-6 py-4">
-                <div class="">
-                    <?php the_post_thumbnail('post_thumbnail', ['style' => 'height: 254px',])?> 
-                </div>
+            <div class="bloc_image">
+                <?php the_post_thumbnail('medium', ['style' => 'width: 100%' ,])?>
+            </div>
                 <div class="font-bold text-xl mb-2 text-cyan-500"><?php the_title() ?></div>
                 <p class="text-gray-700 text-base">
             <?php the_excerpt()?>

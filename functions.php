@@ -2,11 +2,13 @@
 
 
 
-
 //activation des functions nécessaires, rajoute ce que tu veux :))
 function naknowledge_supports (){
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+    add_theme_support('menus');
+    register_nav_menu('header', 'Menu principal');
+    register_nav_menu('footer', 'Menu footer');
 }
 
 

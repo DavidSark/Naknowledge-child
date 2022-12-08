@@ -14,10 +14,10 @@
         <h1><a><?php bloginfo('name'); ?></a></h1>
         <h2><?php bloginfo('description'); ?></h2>
         
-        <nav>
+        <nav >
           <?php 
             wp_nav_menu ( array (
-            'theme_location' => 'header-menu' 
+            'theme_location' => 'Menu principal' 
           ) ); ?>
         </nav>
 
