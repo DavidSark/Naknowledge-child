@@ -1,13 +1,15 @@
       <footer>
        
-        <nav class="menu-footer">
+      
+        <nav>
           <?php 
-            wp_nav_menu ( array (
-            'theme_location' => 'Menu footer' 
-          ) );?>
+            wp_nav_menu ([
+            'theme_location' => 'footer',
+            "menu_class" => "menu-footer"
+          ]);?>
+          
         </nav>
         
-
       </footer>
       
     </div>

@@ -25,6 +25,10 @@ Tags: simple, facile, sans danger, base pour la suite
 
 }
 
+.menu li {
+  display: inline-block;
+}
+
 .menu {
   border: 2px solid red;
   margin-bottom: 10px;
@@ -34,7 +38,7 @@ Tags: simple, facile, sans danger, base pour la suite
 }
 
 .menu-footer {
-  position: relative;
+  border: 2px solid blue;
 }
 
 .bloc_image {
