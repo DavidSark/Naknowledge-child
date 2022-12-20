@@ -1,23 +1,7 @@
-<?= get_search_form()?>
+<?php get_header() ?>
 
 
-
-
-
-<?php $jeux_videos = get_terms(['taxonomy' => 'jeux_video']); ?>
-<?php if (is_array($jeux_videos)): ?>
-<ul>
-    <?php foreach($jeux_videos as $jeux_video): ?>
-    <li>
-        <a href="<?= get_term_link($jeux_video) ?>" class="<?= is_tax('jeux_video', $jeux_video->term_id) ? 'active' : '' ?>"><?= $jeux_video->name ?></a>
-    </li>
-    <?php endforeach; ?>
-</ul>
-<?php endif ?>
-
-
-
-
+<h1>Voir toutes les leçons</h1>
 
 <?php if (have_posts()): ?>
     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">

@@ -14,11 +14,11 @@
         <h1><a><?php bloginfo('name'); ?></a></h1>
         <h2><?php bloginfo('description'); ?></h2>
         
-        <nav>
+        <nav class="menu-header" style="background-color: <?= get_theme_mod("header_background") ?>">
           <?php 
             wp_nav_menu ( array (
-            'theme_location' => 'header-menu' 
+            'theme_location' => 'header-menu',
+            "menu_class" => "none"
           ) ); ?>
         </nav>
-        <?= get_search_form()?>
       </header>

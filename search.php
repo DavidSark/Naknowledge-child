@@ -1,19 +1,19 @@
-<?= get_search_form()?>
+<?php get_header()?>
+
+<h1>Résultat de la recherche : <?= get_search_query() ?></h1>
 
 
+<form>
+    <input type="search" name='s' value='<?php get_search_query() ?>' placeholder='Votre recherche'>
 
 
+    <input type="checkbox" value='1' name='sponso' id='recherche'>
+    <label for="recherche">
+        Article sponso seulement
+    </label>
 
-<?php $jeux_videos = get_terms(['taxonomy' => 'jeux_video']); ?>
-<?php if (is_array($jeux_videos)): ?>
-<ul>
-    <?php foreach($jeux_videos as $jeux_video): ?>
-    <li>
-        <a href="<?= get_term_link($jeux_video) ?>" class="<?= is_tax('jeux_video', $jeux_video->term_id) ? 'active' : '' ?>"><?= $jeux_video->name ?></a>
-    </li>
-    <?php endforeach; ?>
-</ul>
-<?php endif ?>
+    <button type='submit'>Chercher</button>
+</form>
 
 
 
@@ -35,3 +35,11 @@
 <?php else: ?>
     <h1>Il n'y a pas d'articles !</h1>
 <?php endif; ?>
+
+
+
+
+
+
+<?php get_footer()?>
+

@@ -13,23 +13,23 @@ Tags: simple, facile, sans danger, base pour la suite
   color: red;
 }
 
-.menu a {
+.menu-header a {
   color: red;
   text-decoration: none;
 }
 
-.menu ul {
+.menu-header ul {
   list-style-type: none;
   display: flex;
   gap: 10px;
 
 }
 
-.menu li {
+.menu-header li {
   display: inline-block;
 }
 
-.menu {
+.menu-header {
   border: 2px solid red;
   margin-bottom: 10px;
   position: fixed;
@@ -41,12 +41,14 @@ Tags: simple, facile, sans danger, base pour la suite
   border: 2px solid blue;
 }
 
-.bloc_image {
+/* .bloc_image {
   border: 2px solid red;
-  width: 20vw;
-  height: auto;
+} */
+
+.search {
+  background: pink;
 }
 
-.image {
+/* .image {
   width: 20vw;
-}
+} */
