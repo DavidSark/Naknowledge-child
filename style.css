@@ -52,3 +52,16 @@ Tags: simple, facile, sans danger, base pour la suite
 /* .image {
   width: 20vw;
 } */
+
+.entry-content {
+  color: blue;
+}
+
+
+.form-login {
+  border: 2px solid green;
+}
+
+.form-login label {
+  font-size: 5rem;
+}

@@ -1,6 +1,8 @@
 <?php 
 
 require_once('options/apparence.php');
+//pour la gestion d'événement : 
+require_once('options/cron.php');
 
 //activation des functions nécessaires, rajoute ce que tu veux :))
 function naknowledge_supports (){
@@ -33,15 +35,7 @@ function montheme_init() {
         'hierarchical' => true,
         'show_admin_column' => true,
     ]);
-    register_post_type('Lecons', [
-        'label' => 'Leçons',       
-        'public' => true,
-        'menu_position' => 3,
-        'menu_icon' => 'dashicons-edit-large',
-        'supports' => ['title', 'editor','thumbnail'], 
-        'show_in_rest' => true,
-        'has_archive' => true,
-    ]);
+  
 }
 
 add_action('init', 'montheme_init');
@@ -86,7 +80,17 @@ function montheme_query_vars($params){
 }
 
 add_action('pre_get_posts','montheme_pre_get_posts');
-
 add_filter('query_vars', 'montheme_query_vars');
 
+
+//renvoie et affichage de résultat dans la base de données
+// global $wpdb;
+
+// $tag = "";
+// $query = $wpdb->prepare("SELECT name FROM {$wpdb->terms} WHERE slug=%s", [$tag]);
+// $results = $wpdb->get_results($query);
+// echo '<pre>';
+// var_dump($results);
+// echo '</pre>';
+// die();
 
