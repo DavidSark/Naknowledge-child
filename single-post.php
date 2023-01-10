@@ -5,18 +5,11 @@
    
     <?php while(have_posts()): the_post();?>
     <div class="">
-        <h1 class="titre_article">Test<?php the_title()?></h1>
 
-        <?php if(get_post_meta(get_the_ID(), SponsoMetaBox::META_KEY, true) === '1'): ?>
-        <div>
-            cet article est sponsorisé
-        </div>
-        <?php endif ?>
+        <h1 class="titre_article">Test<?php the_title()?></h1>
+        
  
-        <p> 
-            <img src="<?php the_post_thumbnail('card-image'); ?> " alt="" class="image"/>
-        </p>
-       
+          <?php the_post_thumbnail('card-image'); ?> 
         <?php the_content()?>
 
 

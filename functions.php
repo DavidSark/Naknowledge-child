@@ -96,3 +96,15 @@ add_filter('query_vars', 'montheme_query_vars');
 // echo '</pre>';
 // die();
 
+
+/* Function pour réduire la description à un nombre de caractère pour 
+pas que la description soit trop longue. */
+function limiter_longueur_description($description) {
+    $longueur_max = 100;
+
+    if (strlen($description) > $longueur_max) {
+        $description = substr($description, 0, $longueur_max) . "...";
+    }
+    return $description;
+}
+add_filter( 'the_excerpt', 'limiter_longueur_description' );
