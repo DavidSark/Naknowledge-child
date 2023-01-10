@@ -392,16 +392,16 @@ style pour le menu des lecons
   flex: none;
 }
 
-
 /* ------------------------------------------------------------------------------------------------------- 
 style pour la page login
 */
 
-/* fond de la page login*/
+/* fond de la page login et register */
 .body_login {
   background: rgb(120, 21, 253);
   background: linear-gradient(180deg, rgba(120, 21, 253, 1) 0%, rgba(187, 138, 254, 1) 100%);
   height: max-content;
+  min-height: 100vh;
 }
 
 /* titre de la page*/
@@ -414,14 +414,12 @@ style pour la page login
   margin: 5vh 5vw;
 }
 
-
-
 /* fond du formulaire */
 .form_login {
   border: 2px solid #6b656f;
   background-color: #fafafa;
   border-radius: 30px;
-  margin: 15vh auto;
+  margin: 5vh auto;
   padding: 3vw;
   max-width: 768px;
   font-family: 'Raleway';
@@ -439,11 +437,13 @@ style pour la page login
   font-size: 1.5rem;
 }
 
-
-
 /* input text et mot de passe */
 .form_login #username,
-.form_login #password {
+.form_login #password,
+.form_login #user_email,
+.form_login #robo,
+.form_login #user_password,
+.form_login #user_cover {
   background-color: #E1C6FF;
   opacity: 50%;
   border-radius: 20px;
@@ -456,7 +456,11 @@ style pour la page login
 
 /* hover input text et mot de passe */
 .form_login #username:hover,
-.form_login #password:hover {
+.form_login #password:hover,
+.form_login #user_email:hover,
+.form_login #robo:hover,
+.form_login #user_password:hover,
+.form_login #user_cover:hover {
   border-color: #9546FF;
 }
 
@@ -494,6 +498,27 @@ style pour la page login
   text-decoration: none;
 }
 
+/* Input captcha caché */
+.fieldset-robo {
+  display: none;
+}
+
+/* Checkbox des politiques placé à gauche */
+.form_login input.input-checkbox {
+  display: inline-block;
+}
+
+/* taille de police  */
+.description {
+  font-size: 0.75rem;
+}
+
+/* mise en forme a */
+.description a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
 
 @media (max-width: 900px) {
   .title_login {
