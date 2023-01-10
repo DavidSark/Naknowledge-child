@@ -33,9 +33,8 @@
         <div class="lecons_grille">
         <?php while(have_posts()): the_post();?>
         
-            <div class="lecon">
-                <?php get_template_part('parts/post', 'post'); ?>
-            </div>
+            <?php get_template_part('parts/post', 'post'); ?>
+            
 
             <?php endwhile ?>
         

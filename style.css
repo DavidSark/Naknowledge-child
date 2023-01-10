@@ -528,18 +528,19 @@ style pour la page login
 }
 
 
-
 /* ------------------------------------------------------------------------------------------------------- 
 style pour la page loop
 */
 
 /*grille des lecons */
 
+/* marge exterieur entre les card et le bord de l'ecran */
 .marge_page {
   padding: 5vh 2vw;
   background-color: #F0F0F0;
 }
 
+/* grille des lecons */
 .lecons_grille {
   margin: auto;
   display: grid;
@@ -547,32 +548,6 @@ style pour la page loop
   grid-gap: 5vw;
   justify-items: center;
   background-color: #f0F0F0;
-}
-
-.lecon {
-  display: block;
-  background-color: #E1C6FF;
-  border-radius: 20px;
-  border: 2px solid red;
-  width: 100%;
-  max-width: 280px;
-  padding: 2vh 2vw;
-}
-
-.bloc_image {
-  margin: 0 auto;
-  max-width: auto;
-  max-height: 250px;
-  overflow: hidden;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.bloc_image img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -587,4 +562,148 @@ style pour la page loop
     grid-template-columns: repeat(3, 1fr);
 
   }
+}
+
+/* style des card des lecons */
+.card {
+  display: block;
+  background-color: #fafafa;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  font-family: 'Raleway';
+  box-shadow: 5px 5px 5px #6b656f80;
+  color: #000;
+}
+
+/* suprresions des styles des liens de la cards */
+.card a {
+  text-decoration: none;
+}
+
+/* style du bloc de l'image */
+.card-bloc_image {
+  margin: 0 auto;
+  max-width: auto;
+  max-height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* style de l'image */
+.card-bloc_image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* information sur l'auteur */
+.card-user_info {
+  margin: 10px 0;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* photo de profil de l'auteur */
+.user_image {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.card-favorie img {
+  width: 20px;
+}
+
+.card-favorie .wpfp-link {
+  display: none;
+}
+
+/* style des niveaux */
+.card-niveau {
+  margin: 10px 0;
+  height: auto;
+}
+
+/* style des tags */
+.card-tags a {
+  font-size: 0.75rem;
+  color: #bd2ced;
+}
+
+/* style du titre de la lecon */
+.card-titre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Reem Kufi';
+  margin: 15px 0 10px 0;
+}
+
+/* style de la desription de la lecon */
+.card-text {
+  margin: 1vh 0;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+/* marge du texte lire la lecon */
+.card-lien {
+  margin-top: 10px;
+}
+
+/* couleur du texte lire la lecon */
+.card-lien a {
+  color: #bd2ced;
+}
+
+/* ------------------------------------------------------------------------------------------------------- 
+style pour la page loop
+*/
+
+.favories {
+  min-height: 100vh;
+}
+
+.favories-title {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Reem Kufi';
+  margin: 5vh 0
+}
+
+.favories-content,
+.favories-content a {
+  display: inline-block;
+  margin: 3vh 0;
+  color: #000;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'Raleway';
+  font-weight: bold;
+}
+
+.favories-content a:hover {
+  color: #9546FF;
+}
+
+.favories-content .wpfp-link {
+  font-weight: normal;
+  margin: 10vw 0;
+  font-size: 1rem;
+}
+
+.favories-content .wpfp-link:hover {
+  color: #f33a3a;
+}
+
+.favories-content .remove-parent {
+  margin: 0 10vw;
+}
+
+.favories-content .wpfp-img {
+  display: none;
 }
