@@ -323,7 +323,7 @@ style pour le footer
 
 /* espace pour rendre toute la page visible lorsque le menu ordinateur est activé */
 .top_espace {
-  height: 35px;
+  height: 50px;
   background-color: #9546FF;
 }
 
@@ -661,13 +661,15 @@ style pour la page loop
 }
 
 /* ------------------------------------------------------------------------------------------------------- 
-style pour la page loop
+style pour la page favories
 */
 
+/* etandre la page pour qu'elle prenne minimum tout l'ecran */
 .favories {
   min-height: 100vh;
 }
 
+/* style du titre de la page favorie */
 .favories-title {
   font-size: 4rem;
   font-weight: bold;
@@ -675,6 +677,7 @@ style pour la page loop
   margin: 5vh 0
 }
 
+/* style des textes de la page favories */
 .favories-content,
 .favories-content a {
   display: inline-block;
@@ -686,24 +689,126 @@ style pour la page loop
   font-weight: bold;
 }
 
+/* style d'un lien lors d'un hover sur la page favorie */
 .favories-content a:hover {
   color: #9546FF;
 }
 
+/* style des lien pour suprimer les lecons des favories */
 .favories-content .wpfp-link {
   font-weight: normal;
   margin: 10vw 0;
   font-size: 1rem;
 }
 
+/* style des lien lors d'un hover pour suprimer une lecon des favories */
 .favories-content .wpfp-link:hover {
   color: #f33a3a;
 }
 
+/* style du lien pour suprimer une lecon des favories */
 .favories-content .remove-parent {
   margin: 0 10vw;
 }
 
+
+/* suppression d'un icon */
 .favories-content .wpfp-img {
   display: none;
+}
+
+/*Mise en forme page article*/
+
+/* ------------------------------------------------------------------------------------------------------- 
+Mise en forme page profil
+*/
+
+
+#header-cover-image {
+  display: none;
+  visibility: hidden;
+}
+
+.field_display-name,
+.field_email,
+.field_website {
+  display: none;
+}
+
+.wpum-template,
+.wpum-profile-page {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------- 
+Page 404
+*/
+
+.body_404 {
+  height: 100vh;
+  background-image: url("images/icones/fond_404.svg");
+  background-size: cover;
+  margin: 10px 20px;
+  overflow: hidden;
+}
+
+.bloc_404 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 70px;
+}
+
+.bloc_404 p {
+  font-family: 'Raleway';
+  font-size: 10rem;
+}
+
+.bloc_404 img {
+  width: 140px;
+}
+
+.introuvable {
+  text-align: center;
+  color: #FFF;
+  font-family: 'Reem Kufi';
+  font-size: 2rem;
+  margin: 20px 0;
+
+}
+
+.retour {
+  margin: 40px auto;
+  width: 200px;
+  background-color: #E1C6FF;
+  border: 1px solid #E1C6FF;
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  font-family: 'Raleway';
+  text-align: center;
+}
+
+.retour a {
+  text-decoration: none;
+}
+
+.retour:hover {
+  background-color: transparent;
+}
+
+.retour:hover a {
+  color: #fff;
+
+}
+
+.bloc_centre_img_404 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.img_404 {
+  width: 500px;
 }
