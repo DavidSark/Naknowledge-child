@@ -25,7 +25,7 @@
         </nav>
 
         <nav class="menu-header header_ordi">
-          <a href="http://localhost/naknowledge/">Naknowledge</a>
+          <a href="http://localhost/naknowledge/naknowlecons/">Naknowledge</a>
           <div class="header_ordi-items">
             <?php 
               wp_nav_menu ( array (

@@ -214,7 +214,7 @@ Menu Header
 
 /* placement du menu version ordi */
 .header_ordi {
-  top: 10;
+  top: 0;
   display: flex;
   justify-content: space-between;
 
