@@ -9,7 +9,8 @@ function naknowledge_supports (){
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_theme_support('menus');
-    register_nav_menu('header', 'Menu principal');
+    register_nav_menu('header-mobile', 'Menu principal mobile');
+    register_nav_menu('header-ordi', 'Menu principal ordi');
     register_nav_menu('footer', 'Menu footer');
 
     add_image_size('post-thumbnails', 300, 250, true);

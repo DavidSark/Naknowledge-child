@@ -159,58 +159,93 @@ table {
   color: red;
 }
 
+
+/*-------------------------------------------------------
+Menu Header
+*/
+
+/* menu */
 .menu-header {
-  color: red;
+  z-index: 50;
+  position: fixed;
   text-decoration: none;
-  width: 100vw;
+  width: 100%;
+  padding: 2vh 0;
+  font-size: 1.5rem;
+  background-color: #9546FF;
 }
 
+/* taille des icons du menu */
+.menu-header img {
+  width: 30px;
+  height: 30px;
+}
+
+/* menu : alignement des items */
 .menu-header ul {
+  margin: 0 3vw;
+  display: inline-block;
   list-style-type: none;
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+/* menu : suppression des style par défault des liens */
+.menu-header a {
+  margin: 0 3vw;
+  text-decoration: none;
+  color: #fafafa;
+  font-family: 'Reem Kufi';
+}
+
+/* placement du menu version mobile */
+.header_phone {
+  bottom: 0;
+}
+
+/* cacher le menu mobile a au-dessus d'une certaine taille d'ecran */
+@media (min-width: 900px) {
+  .header_phone {
+    display: none;
+  }
+}
+
+/* placement du menu version ordi */
+.header_ordi {
+  top: 10;
+  display: flex;
+  justify-content: space-between;
 
 }
 
-.menu-header li {
-  display: inline-block;
+/* espacement des items sur le menu version ordi */
+.header_ordi-items a {
+  width: 40%;
+  font-family: 'Raleway';
+  font-size: 1rem;
 }
 
-.menu-header {
-  border: 2px solid red;
-  margin-bottom: 10px;
-
-  right: 0;
-  background: white;
+/* comportement des items sur le menu version ordi */
+.header_ordi-items ul {
+  flex-direction: row-reverse;
 }
 
-.menu-footer {
-  border: 2px solid blue;
+
+
+
+@media (max-width: 900px) {
+  .header_ordi {
+    display: none;
+  }
 }
-
-/* .bloc_image {
-  border: 2px solid red;
-} */
-
-.search {
-  background: pink;
-}
-
-/* .image {
-  width: 20vw;
-} */
-
-.entry-content {
-  color: blue;
-}
-
 
 
 /* ------------------------------------------------------------------------------------------------------- 
 style pour la page login
 */
 
-/* fond de la page*/
+/* fond de la page login*/
 .body_login {
   background: rgb(120, 21, 253);
   background: linear-gradient(180deg, rgba(120, 21, 253, 1) 0%, rgba(187, 138, 254, 1) 100%);
