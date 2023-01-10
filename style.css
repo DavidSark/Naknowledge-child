@@ -526,3 +526,65 @@ style pour la page login
     font-size: 0.75rem;
   }
 }
+
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+style pour la page loop
+*/
+
+/*grille des lecons */
+
+.marge_page {
+  padding: 5vh 2vw;
+  background-color: #F0F0F0;
+}
+
+.lecons_grille {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5vw;
+  justify-items: center;
+  background-color: #f0F0F0;
+}
+
+.lecon {
+  display: block;
+  background-color: #E1C6FF;
+  border-radius: 20px;
+  border: 2px solid red;
+  width: 100%;
+  max-width: 280px;
+  padding: 2vh 2vw;
+}
+
+.bloc_image {
+  margin: 0 auto;
+  max-width: auto;
+  max-height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bloc_image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .lecons_grille {
+    grid-template-columns: repeat(2, 1fr);
+    ;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lecons_grille {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}

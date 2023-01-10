@@ -1,7 +1,7 @@
 <div class="top_espace"></div>
 
 <div class="menu-lecons">
-    
+
     <div class="menu-lecons_bar">
         <?= get_search_form()?>
     </div>
@@ -15,11 +15,7 @@
         </nav>
 </div>
 
-
-
-
-
-<?php $jeux_videos = get_terms(['taxonomy' => 'jeux_video']); ?>
+<!-- <?php $jeux_videos = get_terms(['taxonomy' => 'jeux_video']); ?>
 <?php if (is_array($jeux_videos)): ?>
 <ul>
     <?php foreach($jeux_videos as $jeux_video): ?>
@@ -29,23 +25,25 @@
     <?php endforeach; ?>
 </ul>
 <?php endif ?>
+ -->
 
 
+ <div class="marge_page">
+    <?php if (have_posts()): ?>
+        <div class="lecons_grille">
+        <?php while(have_posts()): the_post();?>
+        
+            <div class="lecon">
+                <?php get_template_part('parts/post', 'post'); ?>
+            </div>
 
-<a href="/naknowledge/wp-admin/post-new.php">Ajouter un article</a>
-<?php if (have_posts()): ?>
-    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-    <?php while(have_posts()): the_post();?>
-    
-        <div>
-            <?php get_template_part('parts/post', 'post'); ?>
+            <?php endwhile ?>
+        
         </div>
-   
+        <?php the_posts_pagination();?>
 
-        <?php endwhile ?>
-      
-    </div>
-    <?php the_posts_pagination();?>
-<?php else: ?>
-    <h1>Il n'y a pas d'articles !</h1>
-<?php endif; ?>
+    <?php else: ?>
+        <h1>Il n'y a pas d'articles !</h1>
+
+    <?php endif; ?>
+</div>
