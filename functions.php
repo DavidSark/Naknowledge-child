@@ -12,6 +12,7 @@ function naknowledge_supports (){
     register_nav_menu('header-mobile', 'Menu principal mobile');
     register_nav_menu('header-ordi', 'Menu principal ordi');
     register_nav_menu('footer', 'Menu footer');
+    register_nav_menu('categories', 'Menu categories');
 
     add_image_size('post-thumbnails', 300, 250, true);
     add_image_size('card-image', 300, 250, true);

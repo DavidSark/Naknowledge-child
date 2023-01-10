@@ -321,6 +321,78 @@ style pour le footer
 }
 
 
+/* espace pour rendre toute la page visible lorsque le menu ordinateur est activé */
+.top_espace {
+  height: 35px;
+  background-color: #9546FF;
+}
+
+/* retirer l'espace du haut des pages en-dessus d'une certaine taille d'ecran */
+@media (max-width: 900px) {
+  .top_espace {
+    display: none;
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+style pour le menu des lecons
+*/
+
+/* menu pour rechercher les lecons */
+.menu-lecons {
+  width: auto;
+  background-color: #9546FF;
+  color: #fafafa;
+  font-size: 1rem;
+  padding: 0 2vw 1vh 2vw;
+}
+
+/* style des liens du menu des lecons */
+.menu-lecons a {
+  text-decoration: none;
+  color: #fafafa;
+  font-family: 'Raleway';
+}
+
+/* style de la bar de recherche */
+.menu-lecons_bar {
+  width: max-content;
+  display: block;
+  margin: auto;
+}
+
+.menu-categories {
+  margin: 1vh auto;
+  width: 100%;
+}
+
+/* style de la bar des categories */
+.menu-categories ul {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+/* style de la bar des categories sur ordinateur */
+@media (min-width: 900px) {
+  .menu-categories ul {
+    justify-content: space-evenly;
+
+  }
+}
+
+/* style de l'element de la liste des categoris */
+.menu-categories li {
+  flex: none;
+}
+
+
 /* ------------------------------------------------------------------------------------------------------- 
 style pour la page login
 */

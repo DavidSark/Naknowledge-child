@@ -1,4 +1,19 @@
-<?= get_search_form()?>
+<div class="top_espace"></div>
+
+<div class="menu-lecons">
+    
+    <div class="menu-lecons_bar">
+        <?= get_search_form()?>
+    </div>
+
+    <nav class="menu-categories">
+          <?php 
+            wp_nav_menu ( array (
+            'theme_location' => 'categories',
+            "menu_class" => "none"
+          ) ); ?>
+        </nav>
+</div>
 
 
 
@@ -17,8 +32,7 @@
 
 
 
-
-
+<a href="/naknowledge/wp-admin/post-new.php">Ajouter un article</a>
 <?php if (have_posts()): ?>
     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
     <?php while(have_posts()): the_post();?>
