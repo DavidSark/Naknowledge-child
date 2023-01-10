@@ -204,8 +204,9 @@ Menu Header
   bottom: 0;
 }
 
-/* cacher le menu mobile a au-dessus d'une certaine taille d'ecran */
+/* cacher le menu mobile au-dessus d'une certaine taille d'ecran */
 @media (min-width: 900px) {
+
   .header_phone {
     display: none;
   }
@@ -231,11 +232,90 @@ Menu Header
   flex-direction: row-reverse;
 }
 
-
-
-
+/* cacher le menu ordi en-dessus d'une certaine taille d'ecran */
 @media (max-width: 900px) {
   .header_ordi {
+    display: none;
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+style pour le footer
+*/
+
+/* style general du footer */
+.menu-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 2vh 0;
+  font-size: 0.75rem;
+  color: #fafafa;
+  background-color: #9546FF;
+}
+
+/* style des liens du footer */
+.menu-footer a {
+  text-decoration: none;
+  color: #fafafa;
+  font-family: 'Raleway';
+
+}
+
+/* style du lien principal du footer (vers l'accueil) */
+.menu-footer>a {
+  text-decoration: none;
+  color: #fafafa;
+  font-family: 'Reem Kufi';
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+/* espace contact du footer (reseaux sociaux + mail) */
+.footer_contact {
+  margin: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  gap: 2vh 0;
+}
+
+/* espace resaues sociaux du footer */
+.footer_contact-items {
+  width: 30px;
+  height: 30px;
+  gap: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 3vw;
+}
+
+/* espace des pages infos */
+.footer_pages_info {
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* grille de l'espace info */
+.footer_pages_info ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 0.75rem;
+  justify-content: space-around;
+}
+
+/* marge vertical des liens de l'esapce info */
+.footer_pages_info li {
+  margin: 0.5rem 0;
+}
+
+/* cacher le footer en-dessus d'une certaine taille d'ecran */
+@media (max-width: 900px) {
+  .menu-footer {
     display: none;
   }
 }
