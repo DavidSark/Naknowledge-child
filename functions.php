@@ -119,3 +119,8 @@ function display_user_email_by_slug() {
         echo '<p>Adresse e-mail : '.$email.'</p>';
     }
 }
+
+function nano_theme_name_scripts() {
+	wp_enqueue_style( 'style-name', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'nano_theme_name_scripts' );
