@@ -846,3 +846,54 @@ Page 404
 .img_404 {
   width: 500px;
 }
+
+/* --------------------------------------------------------------------------------------------------------
+Page politique de confidentialité */
+.customize-support {
+  background-color: #f0f0f0;
+}
+
+.top_espace2 {
+  height: 70px;
+}
+
+.titre_politique {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+.bloc_contenu {
+  font-family: 'Raleway';
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.bloc_contenu p {
+  padding-top: 10px;
+  margin: 0 20px 0 20px;
+}
+
+.bloc_contenu h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 20px 10px 20px;
+  ;
+}
+
+.bot_espace {
+  height: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .titre_politique {}
+
+  .bloc_contenu {
+    padding: 0 10px 0 10px;
+  }
+
+  .bloc_contenu p {}
+}
