@@ -108,3 +108,14 @@ function limiter_longueur_description($description) {
     return $description;
 }
 add_filter( 'the_excerpt', 'limiter_longueur_description' );
+
+
+
+function display_user_email_by_slug() {
+    $user_slug = get_query_var( 'author_name' );
+    $user = get_user_by( 'slug', $user_slug );
+    if( !empty( $user ) ) {
+        $email = $user->user_email;
+        echo '<p>Adresse e-mail : '.$email.'</p>';
+    }
+}
