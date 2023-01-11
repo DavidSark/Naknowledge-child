@@ -154,11 +154,6 @@ table {
 
 
 
-/*----------------*/
-.titre_article {
-  color: red;
-}
-
 
 /*-------------------------------------------------------
 Menu Header
@@ -233,7 +228,7 @@ Menu Header
 }
 
 /* cacher le menu ordi en-dessus d'une certaine taille d'ecran */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .header_ordi {
     display: none;
   }
@@ -345,7 +340,7 @@ style pour le menu des lecons
   background-color: #9546FF;
   color: #fafafa;
   font-size: 1rem;
-  padding: 0 2vw 1vh 2vw;
+  padding: 3.5vh 2vw 1vh 2vw;
 }
 
 /* style des liens du menu des lecons */
@@ -588,6 +583,8 @@ style pour la page loop
 
   }
 }
+
+
 
 /* style des card des lecons */
 .card {
@@ -910,7 +907,7 @@ Page à propos */
   margin: 0 auto;
   max-width: 1360px;
   height: max-content;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 /* espacement des paragraphes */
@@ -927,6 +924,7 @@ Page à propos */
   margin: 0px 20px 10px 20px;
 }
 
+/* style des titres du à propos*/
 .titre_à_propos {
   font-family: 'Raleway';
   font-weight: bold;
@@ -935,6 +933,7 @@ Page à propos */
   margin: 0 auto;
 }
 
+/*style du texte qui somme nous*/
 .titre_qui_somme_nous {
   font-family: 'Raleway';
   font-weight: bold;
@@ -944,27 +943,33 @@ Page à propos */
 
 }
 
+/* bloc des avatars en flex pour les mettre en ligne*/
 .bloc_contenu_avatar {
   padding-top: 25px;
   display: flex;
 }
 
+/*bloc avatar pour aligner en colone l'avatar et le petit texte de description*/
 .avatar {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+/*texte center et width fixe du texte descriptif de l'équipe*/
 .description_equipe {
   text-align: center;
   width: 250px;
 }
 
+/*marge pour le bloc de text explicatif de l'équipe*/
 .bloc_txt_explicatif p {
   margin-top: 20px;
 }
 
 @media screen and (max-width: 1024px) {
+
+  /*redimension du bloc à propos pour les devices plus petits*/
   .bloc_contenu_à_propos {
     padding: 0 10px 0 10px;
   }
