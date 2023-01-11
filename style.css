@@ -909,7 +909,8 @@ Page à propos */
   font-family: 'Raleway';
   margin: 0 auto;
   max-width: 1360px;
-  height: 100vh;
+  height: max-content;
+  min-height: 100vh;
 }
 
 /* espacement des paragraphes */
