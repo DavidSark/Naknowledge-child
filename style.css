@@ -849,14 +849,18 @@ Page 404
 
 /* --------------------------------------------------------------------------------------------------------
 Page politique de confidentialité */
+
+/* Couleur du background */
 .customize-support {
   background-color: #f0f0f0;
 }
 
+/* espacement de la hauteur */
 .top_espace2 {
   height: 70px;
 }
 
+/* style pour le titre  */
 .titre_politique {
   font-family: 'Raleway';
   font-weight: bold;
@@ -865,17 +869,20 @@ Page politique de confidentialité */
   margin: 0 auto;
 }
 
+/* style + centré le contenu avec une width max de 1024 */
 .bloc_contenu {
   font-family: 'Raleway';
   margin: 0 auto;
   max-width: 1024px;
 }
 
+/* espacement des paragraphes */
 .bloc_contenu p {
   padding-top: 10px;
   margin: 0 20px 0 20px;
 }
 
+/* espacement des titres et style */
 .bloc_contenu h2 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -883,17 +890,104 @@ Page politique de confidentialité */
   ;
 }
 
+/* espacement bas */
 .bot_espace {
   height: 70px;
 }
 
+/* media queries pour adapter la page au format téléphone */
 @media screen and (max-width: 1024px) {
-
-  .titre_politique {}
-
   .bloc_contenu {
     padding: 0 10px 0 10px;
   }
+}
 
-  .bloc_contenu p {}
+/* ---------------------------------------------------------------------------------------
+Page à propos */
+
+.bloc_contenu_à_propos {
+  font-family: 'Raleway';
+  margin: 0 auto;
+  max-width: 1360px;
+  height: 100vh;
+}
+
+/* espacement des paragraphes */
+.bloc_contenu_à_propos p {
+  font-size: 1.25rem;
+  padding-top: 10px;
+  margin: 0 20px 0 20px;
+}
+
+/* espacement des titres et style */
+.bloc_contenu_à_propos h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0px 20px 10px 20px;
+}
+
+.titre_à_propos {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+.titre_qui_somme_nous {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 30px;
+  margin: 0 auto;
+
+}
+
+.bloc_contenu_avatar {
+  padding-top: 25px;
+  display: flex;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description_equipe {
+  text-align: center;
+  width: 250px;
+}
+
+.bloc_txt_explicatif p {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .bloc_contenu_à_propos {
+    padding: 0 10px 0 10px;
+  }
+}
+
+/* grille des avatars */
+.bloc_contenu_avatar {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5vw;
+  justify-items: center;
+  background-color: #f0F0F0;
+}
+
+@media (min-width: 768px) {
+  .bloc_contenu_avatar {
+    grid-template-columns: repeat(2, 1fr);
+    ;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bloc_contenu_avatar {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
