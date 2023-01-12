@@ -1,14 +1,15 @@
              <div class="card">
 
- <!-- Appel de l'image en tant que miniature -->
-            <?php 
-            $image_id = get_field('image_mise_en_avant', $post->ID);
-            set_post_thumbnail( $post->ID, $image_id );
-            ?>  
+             <!--indiquer a wp que l'image de ce champs acf correspond a l'image mise en avant -->
+                 <?php 
+                    $image_id = get_field('image_mise_en_avant', $post->ID);
+                    set_post_thumbnail( $post->ID, $image_id );
+                ?>  
 
-            <div class="card-bloc_image">
-                <?php the_post_thumbnail('medium')?>
-            </div>
+                <!-- Appel de l'image en tant que miniature -->
+                <div class="card-bloc_image">
+                    <?php the_post_thumbnail('medium')?>
+                </div>
 
 
                 <figure class="card-user_info">
