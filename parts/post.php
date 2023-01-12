@@ -1,11 +1,16 @@
              <div class="card">
 
  <!-- Appel de l'image en tant que miniature -->
+            <?php 
+            $image_id = get_field('image_mise_en_avant', $post->ID);
+            set_post_thumbnail( $post->ID, $image_id );
+            ?>  
+
             <div class="card-bloc_image">
-                <?php the_post_thumbnail('medium' )?>   
-            
+                <?php the_post_thumbnail('medium')?>
             </div>
-                
+
+
                 <figure class="card-user_info">
                     <!-- Appel de l'image de profil et du nom de l'auteur de l'article-->
                     <fig class="user_image">
@@ -28,31 +33,31 @@
                 <!--niveau de la lecon-->
                 <div class="card-niveau">
                     <?php 
-                        $category = get_field('niveau');
+                        $category = get_field('niveaux_de_difficulte');
                         if (($category == 1) || ($category == 0)) {
                             echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_1.svg"/>';
                         }
                     ?>
                     <?php 
-                        $category = get_field('niveau');
+                        $category = get_field('niveaux_de_difficulte');
                         if ($category == 2) {
                             echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_2.svg"/>';
                         }
                     ?>
                     <?php 
-                        $category = get_field('niveau');
+                        $category = get_field('niveaux_de_difficulte');
                         if ($category == 3) {
                             echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_3.svg"/>';
                         }
                     ?>
                     <?php 
-                        $category = get_field('niveau');
+                        $category = get_field('niveaux_de_difficulte');
                         if ($category == 4) {
                             echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_4.svg"/>';
                         }
                     ?>
                     <?php 
-                        $category = get_field('niveau');
+                        $category = get_field('niveaux_de_difficulte');
                         if ($category == 5) {
                             echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_5.svg"/>';
                         }
@@ -71,12 +76,18 @@
                         ?>
                 </p>
 
+                
                 <!-- Appel du titre de l'article-->         
-                <h2 class="card-titre"><?php the_title() ?></h2>
-   
+                <h2 class="card-titre">    
+                    <?php the_title() ?>
+                </h2>
+                
                 <!--Appel de la description de l'article  -->
                 <p class="card-text">
-                    <?php the_excerpt()?>
+                    <?php 
+                        $value = get_field('description_lecon', $post->ID); 
+                        echo " $value "
+                    ?>
                 </p>
 
 

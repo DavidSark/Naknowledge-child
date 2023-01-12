@@ -20,12 +20,10 @@
 
 
 <?php if (have_posts()): ?>
-    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+    <div class="lecons_grille">
     <?php while(have_posts()): the_post();?>
     
-        <div>
             <?php get_template_part('parts/post', 'post'); ?>
-        </div>
    
 
         <?php endwhile ?>
