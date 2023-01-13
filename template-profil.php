@@ -1,6 +1,6 @@
 <?php
 /** 
- * Template Name: Page du profile des autres
+ * Template Name: Page de son profil
  * Template Post Type: page, post
  */
 ?>

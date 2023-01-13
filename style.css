@@ -162,7 +162,7 @@ Menu Header
 /* menu */
 .menu-header {
   z-index: 50;
-  position: fixed;
+
   text-decoration: none;
   width: 100%;
   padding: 2vh 0;
@@ -438,7 +438,7 @@ style pour la page login
 .form_login #user_email,
 .form_login #robo,
 .form_login #user_password,
-.form_login #user_cover {
+.form_login #user_avatar {
   background-color: #E1C6FF;
   opacity: 50%;
   border-radius: 20px;
@@ -666,9 +666,8 @@ style pour la page loop
 
 /* style de la desription de la lecon */
 .card-text {
-  margin: 1vh 0;
+  margin: 10px 0;
   font-size: 1rem;
-  margin: 10px;
 }
 
 /* marge du texte lire la lecon */
@@ -981,7 +980,6 @@ Page à propos */
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 5vw;
   justify-items: center;
-  background-color: #f0F0F0;
 }
 
 @media (min-width: 768px) {
@@ -995,4 +993,104 @@ Page à propos */
   .bloc_contenu_avatar {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/*---------------------------------------------------------------------------------------
+Page du formulaire pour ajouter des leçons*/
+
+.bloc_formulaire {
+  background-color: #F0F0F0;
+}
+
+.acf-form {
+  max-width: 600px;
+  margin: 4vh auto;
+  background-color: #FFF;
+  border-radius: 25px;
+  padding: 2vh;
+
+}
+
+.acf-form label {
+  color: #7032CF;
+  font-size: 1.25rem;
+}
+
+.acf-fields {
+  font-family: 'Raleway';
+}
+
+.acf-fields .acf-field--post-title input {
+  border-color: #E6DAEC !important;
+  border-radius: 10px;
+
+
+}
+
+/* Bord arrondi pour les champs catégorie et mots-clés */
+.lecon_mots_cles,
+.lecon_categorie,
+.lecon_description,
+.lecon_contenu {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Changement des polices d'écritures pour les résultats */
+.select2-results__options {
+  font-family: 'Raleway' !important;
+}
+
+.acf-form-submit {
+  margin-bottom: 2vh;
+}
+
+.acf-button {
+  display: block;
+  margin: 2vh auto;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: #fafafa;
+  background-color: #9546FF;
+  border: none;
+  border-radius: 20px;
+}
+
+.ajout_form {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 10px;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .ajout_form {
+    margin-top: 5vh;
+  }
+
+  .acf-form {
+    margin: 4vh 5vw 12vh 5vw;
+  }
+}
+
+
+
+
+/*-------------------------------------------------------------------
+Page profil
+*/
+/* 
+.profil_button {
+  text-decoration: none;
+  color: #FFF;
+  background-color: black;
+  padding: 10px;
+  margin: 20px;
+} */
+
+.is-style-outline a {
+  background-color: #bd2ced;
 }

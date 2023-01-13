@@ -10,7 +10,6 @@
                <?php the_post_thumbnail('medium')?>
            </div>
 
-
                <figure class="card-user_info">
                    <!-- Appel de l'image de profil et du nom de l'auteur de l'article-->
                    <fig class="user_image">

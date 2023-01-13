@@ -1,6 +1,5 @@
       <footer>
        
-      
         <nav class="menu-footer">
 
           <a href="http://localhost/naknowledge/">Naknowledge</a>

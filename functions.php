@@ -110,17 +110,26 @@ function limiter_longueur_description($description) {
 add_filter( 'the_excerpt', 'limiter_longueur_description' );
 
 
+// pour le profil à revoir
+// function display_user_email_by_slug() {
+//     $user_slug = get_query_var( 'author_name' );
+//     $user = get_user_by( 'slug', $user_slug );
+//     if( !empty( $user ) ) {
+//         $email = $user->user_email;
+//         echo '<p>Adresse e-mail : '.$email.'</p>';
+//     }
+// }
 
-function display_user_email_by_slug() {
-    $user_slug = get_query_var( 'author_name' );
-    $user = get_user_by( 'slug', $user_slug );
-    if( !empty( $user ) ) {
-        $email = $user->user_email;
-        echo '<p>Adresse e-mail : '.$email.'</p>';
-    }
-}
-
+//Ajout de la feuille de style : 
 function nano_theme_name_scripts() {
 	wp_enqueue_style( 'style-name', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'nano_theme_name_scripts' );
+
+
+
+// // /Ajout des scripts : 
+// function my_scripts() {
+//     wp_enqueue_script( 'my_script', get_template_directory_uri() . '/js/my_script.js', array( 'jquery' ), '1.0', true );
+// }
+// add_action( 'wp_enqueue_scripts', 'my_scripts' );

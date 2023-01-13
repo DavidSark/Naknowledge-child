@@ -5,7 +5,7 @@
    
     <?php while(have_posts()): the_post();?>
     <div class="">
-        <h1 class="titre_article">Test<?php the_title()?></h1>
+        <h1 class="titre_article"><?php the_title()?></h1>
 
         <p> 
             <img src="<?php the_post_thumbnail_url('medium'); ?> " alt="" class="image"/>
