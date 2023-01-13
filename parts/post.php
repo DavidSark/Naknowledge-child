@@ -24,12 +24,6 @@
                     <?php wpfp_link() ?>
                 </div>
 
-               <!-- Appel de la catégorie de l'article
-               <div>
-                   <//?php the_category()?>
-               </div> -->
-
-               <!--niveau de la lecon-->
                <div class="card-niveau">
                    <?php 
                        $category = get_field('niveaux_de_difficulte');
