@@ -162,7 +162,7 @@ Menu Header
 /* menu */
 .menu-header {
   z-index: 50;
-
+  position: fixed;
   text-decoration: none;
   width: 100%;
   padding: 2vh 0;
@@ -948,7 +948,7 @@ Page à propos */
 }
 
 /*bloc avatar pour aligner en colone l'avatar et le petit texte de description*/
-.avatar {
+.card .avatar {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -998,33 +998,36 @@ Page à propos */
 /*---------------------------------------------------------------------------------------
 Page du formulaire pour ajouter des leçons*/
 
+/* couleur de fond */
 .bloc_formulaire {
   background-color: #F0F0F0;
 }
 
+
+/* centrage du bloc du formulaire */
 .acf-form {
   max-width: 600px;
   margin: 4vh auto;
   background-color: #FFF;
   border-radius: 25px;
   padding: 2vh;
-
 }
 
 .acf-form label {
+  /*style pour les labels */
   color: #7032CF;
   font-size: 1.25rem;
 }
 
+/* mise en place de la font raleway */
 .acf-fields {
   font-family: 'Raleway';
 }
 
+/* bord pour l'input du titre */
 .acf-fields .acf-field--post-title input {
   border-color: #E6DAEC !important;
   border-radius: 10px;
-
-
 }
 
 /* Bord arrondi pour les champs catégorie et mots-clés */
@@ -1042,10 +1045,12 @@ Page du formulaire pour ajouter des leçons*/
   font-family: 'Raleway' !important;
 }
 
+/* espacement pour le bouton de soumission */
 .acf-form-submit {
   margin-bottom: 2vh;
 }
 
+/* bouton de d'envoie de la leçon */
 .acf-button {
   display: block;
   margin: 2vh auto;
@@ -1057,6 +1062,7 @@ Page du formulaire pour ajouter des leçons*/
   border-radius: 20px;
 }
 
+/* style pour le titre */
 .ajout_form {
   font-family: 'Raleway';
   font-weight: bold;
@@ -1066,6 +1072,8 @@ Page du formulaire pour ajouter des leçons*/
   text-align: center;
 }
 
+
+/* media queries  */
 @media screen and (max-width: 700px) {
   .ajout_form {
     margin-top: 5vh;
@@ -1083,6 +1091,9 @@ Page du formulaire pour ajouter des leçons*/
 Page profil
 */
 /* 
+
+
+
 .profil_button {
   text-decoration: none;
   color: #FFF;
@@ -1091,6 +1102,178 @@ Page profil
   margin: 20px;
 } */
 
+/* Recadrage et style de la page profil */
+#post-122 {
+  max-width: 600px;
+  margin: 10vh auto;
+  background-color: #FFF;
+  border-radius: 25px;
+  padding: 2vh;
+}
+
+/* style pour le titre de la page et centrage du */
+.titre_profil {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 5vh;
+  text-align: center;
+}
+
+/* Définition des marges pour la card profil */
+#wpum-profile-card {
+  margin: 12vh 5vw 1vh 5vw;
+  font-family: 'Raleway';
+}
+
+/* style pour le bouton pouu aller modifier son profil */
+.modification_profil {
+  font-family: 'Raleway';
+  display: block;
+  text-decoration: none;
+  color: rgba(189, 44, 237, .50);
+  margin: 0 5vw 0vh 5vw;
+  text-align: right !important;
+}
+
+/* hover pour le text de modification */
+.modification_profil:hover {
+  text-decoration: underline;
+}
+
+/* Style du titre tags préférés et lecon publiée */
+.titre_tags_pref,
+.text_lecon_publie {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 3vh 5vw 3vh 5vw;
+}
+
+/* marge pour le nuage de mot clé et pour le bloc input des lecons
+publiées */
+.is-style-outline,
+.wp-block-archives {
+  margin: 0 5vw 3vh 5vw;
+}
+
+/* style pour les mots clés */
 .is-style-outline a {
-  background-color: #bd2ced;
+  text-decoration: none;
+  background-color: rgba(225, 198, 255, .5);
+  color: #000;
+}
+
+/* effet de hover pour les mots clés */
+.tag-cloud-link {
+  border: none;
+}
+
+.tag-cloud-link:hover {
+  background-color: rgba(189, 44, 237, .70);
+  color: #FFF;
+}
+
+/* style pour le label de sélection des favoris */
+#wp-block-archives-4 {
+  border: 1px solid;
+  background-color: rgba(225, 198, 255, .5);
+  font-size: unset !important;
+  margin-right: 0;
+  padding: 1ch 2ch;
+}
+
+/* style de titre pour consulter les favoris */
+.consulter_favoris {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 3vh 5vw 1vh 5vw;
+}
+
+/* style pour la consultation des favoris */
+.mes_favoris {
+  font-family: 'Raleway';
+  text-decoration: none;
+  color: rgba(189, 44, 237, .50);
+  margin: 0 5vw 0vh 5vw;
+}
+
+/* hover pour la consultation des favoris */
+.mes_favoris:hover {
+  text-decoration: underline;
+}
+
+/* boutton déconnexion */
+.wp-block-loginout a {
+  font-family: 'Raleway';
+  display: block;
+  text-decoration: none;
+  color: rgba(189, 44, 237, .50);
+  margin: 5vh 5vw 0vh 5vw;
+  text-align: right !important;
+}
+
+@media screen and (max-width: 700px) {
+  #post-122 {
+    margin: 4vh 5vw 4vh 5vw;
+  }
+}
+
+/* -------------------------------------------------------------------------------------
+page modification profile */
+
+/* mise en forme  */
+#post-121 {
+  max-width: 600px;
+  margin: 10vh auto;
+  background-color: #FFF;
+  border-radius: 25px;
+  padding: 2vh;
+  font-family: 'Raleway';
+}
+
+/* mise en forme du titre */
+#post-121 h1 {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 5vh 5vw 5vh 5vw;
+  text-align: center;
+}
+
+/* cacher les élements inutiles */
+.fieldset-user_description,
+.fieldset-user_firstname,
+.fieldset-user_lastname,
+.fieldset-user_website {
+  display: none;
+}
+
+/* bouton de navigation */
+.wpum-account-navigation a {
+  font-family: 'Raleway';
+  color: #000;
+}
+
+/* bouton de navigation active */
+#wpum-account-forms-tabs ul li.active {
+  background-color: rgba(225, 198, 255, .5);
+}
+
+/* bouton enregistrer les modifications du formulaire */
+.button {
+  padding: 0.75rem 0.75rem;
+  color: #fafafa;
+  background-color: #9546FF;
+  border: none;
+  border-radius: 20px;
+}
+
+
+/* media queries */
+@media screen and (max-width: 700px) {
+  #post-121 {
+    margin: 4vh 5vw 4vh 5vw;
+  }
 }
