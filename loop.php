@@ -15,18 +15,6 @@
         </nav>
 </div>
 
-<!-- <?php $jeux_videos = get_terms(['taxonomy' => 'jeux_video']); ?>
-<?php if (is_array($jeux_videos)): ?>
-<ul>
-    <?php foreach($jeux_videos as $jeux_video): ?>
-    <li>
-        <a href="<?= get_term_link($jeux_video) ?>" class="<?= is_tax('jeux_video', $jeux_video->term_id) ? 'active' : '' ?>"><?= $jeux_video->name ?></a>
-    </li>
-    <?php endforeach; ?>
-</ul>
-<?php endif ?>
- -->
-
 
  <div class="marge_page">
     <?php if (have_posts()): ?>
