@@ -877,6 +877,18 @@ style pour la page loop
   }
 }
 
+/* h1 de la page search.php */
+.search_titlte {
+  font-family: "Reem Kufi";
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 20px 5vw;
+}
+
+/* style de la requette afficher dans le titre */
+.search-requette {
+  color: #7032CF;
+}
 
 /*------------------
 bouton "voir plus"

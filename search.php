@@ -1,21 +1,21 @@
 <?php get_header()?>
 
-<h1>Résultat de la recherche : <?= get_search_query() ?></h1>
+<div class="menu-lecons">
 
+    <div class="menu-lecons_bar">
+        <?= get_search_form()?>
+    </div>
 
-<form>
-    <input type="search" name='s' value='<?php get_search_query() ?>' placeholder='Votre recherche'>
+    <nav class="menu-categories">
+          <?php 
+            wp_nav_menu ( array (
+            'theme_location' => 'categories',
+            "menu_class" => "none"
+          ) ); ?>
+        </nav>
+</div>
 
-
-    <input type="checkbox" value='1' name='sponso' id='recherche'>
-    <label for="recherche">
-        Article sponso seulement
-    </label>
-
-    <button type='submit'>Chercher</button>
-</form>
-
-
+<h1 class="search_titlte">Résultat de la recherche :<span class="search-requette"> <?= get_search_query() ?></span></h1>
 
 
 
@@ -25,7 +25,6 @@
     
             <?php get_template_part('parts/post', 'post'); ?>
    
-
         <?php endwhile ?>
       
     </div>
