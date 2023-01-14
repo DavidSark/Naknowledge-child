@@ -878,6 +878,20 @@ style pour la page loop
 }
 
 
+/*------------------
+bouton "voir plus"
+*/
+
+.ctis-load-more-container,
+.ctis-loader-elements {
+  margin: auto auto !important;
+  background-color: #7032CF;
+  font-family: "Reem Kufi";
+  font-size: 1.5rem;
+  color: #F0F0F0;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
 
 
 
