@@ -1,11 +1,6 @@
 <div class="card">
 
 <!-- Appel de l'image en tant que miniature -->
-           <?php 
-           $image_id = get_field('image_mise_en_avant', $post->ID);
-           set_post_thumbnail( $post->ID, $image_id );
-           ?>  
-
            <div class="card-bloc_image">
                <?php the_post_thumbnail('medium')?>
            </div>
@@ -20,9 +15,9 @@
                    </figcaption>
                 </figure>
 
-                <div class="card-favorie">
+                <!-- <div class="card-favorie">
                     <?php wpfp_link() ?>
-                </div>
+                </div> -->
 
                <div class="card-niveau">
                    <?php 
