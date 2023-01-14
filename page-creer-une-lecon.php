@@ -12,24 +12,22 @@
             // …
 
             acf_form(array(
-                'post_id' => 'new_post', // On va créer une nouvelle publication
+                'post_id' => 'new_post', // On crée une nouvelle publication
                 'field_groups' => array( 'group_63bf05319a17d' ), // L'ID du post du groupe de champs
                 'new_post' => array(
-                    'post_type' => 'post', // Enregistrer dans l'annuaire
-                    'post_status' => 'publish', // Enregistrer en brouillon
+                    'post_type' => 'post', // Enregistrer dans article
+                    'post_status' => 'publish', // publier
                 ),
                 'return' => add_query_arg( 'updated', 'true', get_permalink() ),
                 'updated_message' => __("Post created", 'acf'),
                 'html_submit_button' => '<input type="submit" class="acf-button button button-primary button-large" value="%s" />',
                 'post_title' => true,
                 'uploader' => 'basic',
-                // 'fields' => array('titre_de_la_lecon'),
-                'submit_value' => "Créer l'article",
-                'updated_message' => 'Article créé avec succès',
+                'submit_value' => "Publier la naknowleçon",
+                'updated_message' => 'Votre naknowleçon a bien été publié',
                 'return' => '%post_url%',
                 'action' => 'create_post'
                 ),
-                // $post_id
                 );
         
             get_footer();
