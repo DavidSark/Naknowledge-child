@@ -1272,11 +1272,13 @@ style pour la page favories
   font-weight: normal;
   margin: 10vw 0;
   font-size: 1rem;
+  color: #f33a3a;
+
 }
 
 /* style des lien lors d'un hover pour suprimer une lecon des favories */
 .favories-content .wpfp-link:hover {
-  color: #f33a3a;
+  color: #bb0000;
 }
 
 /* style du lien pour suprimer une lecon des favories */
