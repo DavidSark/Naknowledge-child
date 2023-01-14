@@ -165,8 +165,8 @@ add_filter('pre_get_posts','search_filter');
 
 
 // ajout du shortcode pour la page favori :
-function example_shortcode() {
+function fav_shortcode() {
     // code à exécuter lorsque le shortcode est utilisé
     return '[wp-favorite-posts]';
  }
- add_shortcode( '[wp-favorite-posts]', 'example_shortcode' );
+ add_shortcode( '[wp-favorite-posts]', 'fav_shortcode' );
