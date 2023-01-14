@@ -235,6 +235,9 @@ Menu Header
 }
 
 
+
+
+
 /* ------------------------------------------------------------------------------------------------------- 
 style pour le footer
 */
@@ -315,7 +318,6 @@ style pour le footer
   }
 }
 
-
 /* espace pour rendre toute la page visible lorsque le menu ordinateur est activé */
 .top_espace {
   height: 50px;
@@ -330,8 +332,11 @@ style pour le footer
 }
 
 
+
+
+
 /* ------------------------------------------------------------------------------------------------------- 
-style pour le menu des catégories
+style pour le menu des catégories sur loop
 */
 
 /* menu pour rechercher les lecons */
@@ -357,12 +362,13 @@ style pour le menu des catégories
   margin: auto;
 }
 
+/* style de la bar des categories */
 .menu-categories {
   margin: 1vh auto;
   width: 100%;
 }
 
-/* style de la bar des categories */
+/* style de la liste des categories */
 .menu-categories ul {
   width: 100%;
   height: max-content;
@@ -387,8 +393,12 @@ style pour le menu des catégories
   flex: none;
 }
 
+
+
+
+
 /* ------------------------------------------------------------------------------------------------------- 
-style pour la page login
+style pour la page login et register
 */
 
 /* fond de la page login et register */
@@ -548,693 +558,12 @@ style pour la page login
 }
 
 
-/* ------------------------------------------------------------------------------------------------------- 
-style pour la page loop
-*/
-
-/*grille des lecons */
-
-/* marge exterieur entre les card et le bord de l'ecran */
-.marge_page {
-  padding: 5vh 2vw;
-  background-color: #F0F0F0;
-}
-
-/* grille des lecons */
-.lecons_grille {
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 5vw;
-  justify-items: center;
-  background-color: #f0F0F0;
-}
-
-@media (min-width: 768px) {
-  .lecons_grille {
-    grid-template-columns: repeat(2, 1fr);
-    ;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lecons_grille {
-    grid-template-columns: repeat(3, 1fr);
-
-  }
-}
-
-
-
-/* style des card des lecons */
-.card {
-  display: block;
-  background-color: #fafafa;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 300px;
-  padding: 20px;
-  font-family: 'Raleway';
-  box-shadow: 5px 5px 5px #6b656f80;
-  color: #000;
-}
-
-/* suprresions des styles des liens de la cards */
-.card a {
-  text-decoration: none;
-}
-
-/* style du bloc de l'image */
-.card-bloc_image {
-  margin: 0 auto;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-/* style de l'image */
-.card-bloc_image img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
-/* information sur l'auteur */
-.card-user_info {
-  margin: 10px 0;
-  width: max-content;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* photo de profil de l'auteur */
-.user_image {
-  border-radius: 100%;
-  overflow: hidden;
-}
-
-.card-favorie img {
-  width: 20px;
-}
-
-.card-favorie .wpfp-link {
-  display: none;
-}
-
-/* style des niveaux */
-.card-niveau {
-  margin: 10px 0;
-  height: auto;
-}
-
-/* style des tags */
-.card-tags a {
-  font-size: 0.75rem;
-  color: #bd2ced;
-  text-decoration: none;
-}
-
-/* style du titre de la lecon */
-.card-titre {
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: 'Reem Kufi';
-  margin: 15px 0 10px 0;
-}
-
-/* style de la desription de la lecon */
-.card-text {
-  margin: 10px 0;
-  font-size: 1rem;
-}
-
-/* marge du texte lire la lecon */
-.card-lien {
-  margin-top: 10px;
-}
-
-/* couleur du texte lire la lecon */
-.card-lien a {
-  color: #bd2ced;
-}
-
-/* ------------------------------------------------------------------------------------------------------- 
-style pour la page favories
-*/
-
-/* etandre la page pour qu'elle prenne minimum tout l'ecran */
-.favories {
-  min-height: 100vh;
-}
-
-/* style du titre de la page favorie */
-.favories-title {
-  font-size: 4rem;
-  font-weight: bold;
-  font-family: 'Reem Kufi';
-  margin: 5vh 0
-}
-
-/* style des textes de la page favories */
-.favories-content,
-.favories-content a {
-  display: inline-block;
-  margin: 3vh 0;
-  color: #000;
-  text-decoration: none;
-  font-size: 2rem;
-  font-family: 'Raleway';
-  font-weight: bold;
-}
-
-/* style d'un lien lors d'un hover sur la page favorie */
-.favories-content a:hover {
-  color: #9546FF;
-}
-
-/* style des lien pour suprimer les lecons des favories */
-.favories-content .wpfp-link {
-  font-weight: normal;
-  margin: 10vw 0;
-  font-size: 1rem;
-}
-
-/* style des lien lors d'un hover pour suprimer une lecon des favories */
-.favories-content .wpfp-link:hover {
-  color: #f33a3a;
-}
-
-/* style du lien pour suprimer une lecon des favories */
-.favories-content .remove-parent {
-  margin: 0 10vw;
-}
-
-
-/* suppression d'un icon */
-.favories-content .wpfp-img {
-  display: none;
-}
-
-
-
-
-
-/* ------------------------------------------------------------------------------------------------------- 
-Page 404
-*/
-/* import image de fond */
-.body_404 {
-  height: 100vh;
-  background-image: url("images/icones/fond_404.svg");
-  background-size: cover;
-  margin: 10px 20px;
-  overflow: hidden;
-}
-
-/* bloc parent pour centrer le text 404 et le logo */
-.bloc_404 {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-top: 70px;
-}
-
-/* changement de police */
-.bloc_404 p {
-  font-family: 'Raleway';
-  font-size: 10rem;
-}
-
-/* import de l'image pour la page */
-.bloc_404 img {
-  width: 140px;
-}
-
-
-/* style pour le texte page introuvable */
-.introuvable {
-  text-align: center;
-  color: #FFF;
-  font-family: 'Reem Kufi';
-  font-size: 2rem;
-  margin: 20px 0;
-
-}
-
-/* style pour le bouton retour */
-.retour {
-  margin: 40px auto;
-  width: 200px;
-  background-color: #E1C6FF;
-  border: 1px solid #E1C6FF;
-  padding: 1vh 2vw;
-  border-radius: 20px;
-  font-family: 'Raleway';
-  text-align: center;
-}
-
-.retour a {
-  text-decoration: none;
-}
-
-/* hover sur le bouton retour */
-.retour:hover {
-  background-color: transparent;
-}
-
-.retour:hover a {
-  color: #fff;
-
-}
-
-/* centrer l'image au milieu */
-.bloc_centre_img_404 {
-  display: flex;
-  justify-content: center;
-  padding-top: 5px;
-}
-
-/* redimensionement de l'image */
-.img_404 {
-  width: 500px;
-}
-
-/* --------------------------------------------------------------------------------------------------------
-Page politique de confidentialité */
-
-/* Couleur du background */
-.customize-support {
-  background-color: #f0f0f0;
-}
-
-/* espacement de la hauteur */
-.top_espace2 {
-  height: 70px;
-}
-
-/* style pour le titre  */
-.titre_politique {
-  font-family: 'Raleway';
-  font-weight: bold;
-  font-size: 2rem;
-  padding-top: 10px;
-  margin: 0 auto;
-}
-
-/* style + centré le contenu avec une width max de 1024 */
-.bloc_contenu {
-  font-family: 'Raleway';
-  margin: 0 auto;
-  max-width: 1024px;
-}
-
-/* espacement des paragraphes */
-.bloc_contenu p {
-  padding-top: 10px;
-  margin: 0 20px 0 20px;
-}
-
-/* espacement des titres et style */
-.bloc_contenu h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 10px 20px 10px 20px;
-  ;
-}
-
-/* espacement bas */
-.bot_espace {
-  height: 70px;
-}
-
-/* media queries pour adapter la page au format téléphone */
-@media screen and (max-width: 1024px) {
-  .bloc_contenu {
-    padding: 0 10px 0 10px;
-  }
-}
-
-/* ---------------------------------------------------------------------------------------
-Page à propos */
-
-.bloc_contenu_à_propos {
-  font-family: 'Raleway';
-  margin: 0 auto;
-  max-width: 1360px;
-  height: max-content;
-  min-height: 80vh;
-}
-
-/* espacement des paragraphes */
-.bloc_contenu_à_propos p {
-  font-size: 1.25rem;
-  padding-top: 10px;
-  margin: 0 20px 0 20px;
-}
-
-/* espacement des titres et style */
-.bloc_contenu_à_propos h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0px 20px 10px 20px;
-}
-
-/* style des titres du à propos*/
-.titre_à_propos {
-  font-family: 'Raleway';
-  font-weight: bold;
-  font-size: 2rem;
-  padding-top: 10px;
-  margin: 0 auto;
-}
-
-/*style du texte qui somme nous*/
-.titre_qui_somme_nous {
-  font-family: 'Raleway';
-  font-weight: bold;
-  font-size: 2rem;
-  padding-top: 30px;
-  margin: 0 auto;
-
-}
-
-/* bloc des avatars en flex pour les mettre en ligne*/
-.bloc_contenu_avatar {
-  padding-top: 25px;
-  display: flex;
-}
-
-/*bloc avatar pour aligner en colone l'avatar et le petit texte de description*/
-.card .avatar {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-/*texte center et width fixe du texte descriptif de l'équipe*/
-.description_equipe {
-  text-align: center;
-  width: 250px;
-}
-
-/*marge pour le bloc de text explicatif de l'équipe*/
-.bloc_txt_explicatif p {
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 1024px) {
-
-  /*redimension du bloc à propos pour les devices plus petits*/
-  .bloc_contenu_à_propos {
-    padding: 0 10px 0 10px;
-  }
-}
-
-/* grille des avatars */
-.bloc_contenu_avatar {
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 5vw;
-  justify-items: center;
-}
-
-@media (min-width: 768px) {
-  .bloc_contenu_avatar {
-    grid-template-columns: repeat(2, 1fr);
-    ;
-  }
-}
-
-@media (min-width: 1440px) {
-  .bloc_contenu_avatar {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/*---------------------------------------------------------------------------------------
-Page du formulaire pour ajouter des leçons*/
-
-/* couleur de fond */
-.bloc_formulaire {
-  background-color: #F0F0F0;
-}
-
-
-/* centrage du bloc du formulaire */
-.acf-form {
-  max-width: 600px;
-  margin: 4vh auto;
-  background-color: #FFF;
-  border-radius: 25px;
-  padding: 2vh;
-}
-
-.acf-form label {
-  /*style pour les labels */
-  color: #7032CF;
-  font-size: 1.25rem;
-}
-
-/* mise en place de la font raleway */
-.acf-fields {
-  font-family: 'Raleway';
-}
-
-/* bord pour l'input du titre */
-.acf-fields .acf-field--post-title input {
-  border-color: #E6DAEC !important;
-  border-radius: 10px;
-}
-
-/* Bord arrondi pour les champs catégorie et mots-clés */
-.lecon_mots_cles,
-.lecon_categorie,
-.lecon_description,
-.lecon_contenu {
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-
-/* Changement des polices d'écritures pour les résultats */
-.select2-results__options {
-  font-family: 'Raleway' !important;
-}
-
-/* espacement pour le bouton de soumission */
-.acf-form-submit {
-  margin-bottom: 2vh;
-}
-
-/* bouton de d'envoie de la leçon */
-.acf-button {
-  display: block;
-  margin: 2vh auto;
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
-  color: #fafafa;
-  background-color: #9546FF;
-  border: none;
-  border-radius: 20px;
-}
-
-/* style pour le titre */
-.ajout_form {
-  font-family: 'Raleway';
-  font-weight: bold;
-  font-size: 2rem;
-  padding-top: 10px;
-  margin-top: 10vh;
-  text-align: center;
-}
-
-
-/* media queries  */
-@media screen and (max-width: 700px) {
-  .ajout_form {
-    margin-top: 5vh;
-  }
-
-  .acf-form {
-    margin: 4vh 5vw 12vh 5vw;
-  }
-}
-
-
-
-/*----------------------------------------------------------------
-Page lecon
-*/
-
-.header_post {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 1%;
-}
-
-.button_back {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-
-}
-
-.button_back-img {
-  border-radius: 5px;
-  width: 50px;
-}
-
-.single_post {
-  background-color: #F0F0F0;
-  margin-top: -10vh;
-  padding-top: 10vh;
-
-}
-
-.lecon {
-  background-color: white;
-  border-radius: 20px;
-  margin: 5vh 5vw;
-  padding: 5% 5%;
-}
-
-.lecon_image {
-  max-width: 400px;
-}
-
-.lecon-user_info {
-  margin: 20px 0;
-}
-
-.lecon-info2 {
-  margin: 20px 0;
-  max-width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.lecon-niveau {
-  width: max-content;
-}
-
-.wpfp-span {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 5px;
-  width: max-content;
-}
-
-.lecon-favorie img {
-  width: 20px;
-}
-
-.lecon-favorie .wpfp-link {
-  text-decoration: none;
-  font-family: "Reem Kufi";
-  font-size: 0.75rem;
-  color: #bd2ced;
-}
-
-.lecon-infos {
-  margin: 20px 0;
-}
-
-.lecon-user_name {
-  font-size: 1rem;
-  color: black;
-}
-
-.lecon-categorie a {
-  font-size: 0.75rem;
-  background: #7032CF;
-  color: #F0F0F0;
-  text-decoration: none;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
-  font-family: "Raleway";
-}
-
-
-.lecon-tags {
-  margin: 20px 0;
-}
-
-.lecon-titre {
-  font-family: "Reem Kufi";
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin: 20px 0;
-}
-
-.lecon-text p {
-  font-family: "Raleway";
-  font-size: 1rem;
-}
-
-@media (min-width: 900px) {
-  .lecon {
-    margin: 5vh 5vw;
-    padding: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    max-width: 1000px;
-  }
-
-  .lecon_image {
-    height: 400px;
-  }
-
-  .header_post {
-    top: 70px
-  }
-}
-
-@media (min-width: 1080px) {
-  .lecon {
-    margin: 5vh auto;
-  }
-}
-
-.autres_lecon {
-  margin: 20px 0;
-}
-
-.autres_lecon-titre {
-  background-color: #E1C6FF;
-  font-family: "Raleway";
-  font-size: 1.5rem;
-  padding: 1rem;
-  margin: 20px 20vw 20px 0;
-
-}
 
 
 
 /*-------------------------------------------------------------------
 Page profil
 */
-/* 
-
-
-
-.profil_button {
-  text-decoration: none;
-  color: #FFF;
-  background-color: black;
-  padding: 10px;
-  margin: 20px;
-} */
 
 /* Recadrage et style de la page profil */
 #post-122 {
@@ -1354,6 +683,10 @@ publiées */
   }
 }
 
+
+
+
+
 /* -------------------------------------------------------------------------------------
 page modification profile */
 
@@ -1409,5 +742,707 @@ page modification profile */
 @media screen and (max-width: 700px) {
   #post-121 {
     margin: 4vh 5vw 4vh 5vw;
+  }
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------------
+Page du formulaire pour ajouter des leçons*/
+
+/* couleur de fond */
+.bloc_formulaire {
+  background-color: #F0F0F0;
+}
+
+
+/* centrage du bloc du formulaire */
+.acf-form {
+  max-width: 600px;
+  margin: 4vh auto;
+  background-color: #FFF;
+  border-radius: 25px;
+  padding: 2vh;
+}
+
+.acf-form label {
+  /*style pour les labels */
+  color: #7032CF;
+  font-size: 1.25rem;
+}
+
+/* mise en place de la font raleway */
+.acf-fields {
+  font-family: 'Raleway';
+}
+
+/* bord pour l'input du titre */
+.acf-fields .acf-field--post-title input {
+  border-color: #E6DAEC !important;
+  border-radius: 10px;
+}
+
+/* Bord arrondi pour les champs catégorie et mots-clés */
+.lecon_mots_cles,
+.lecon_categorie,
+.lecon_description,
+.lecon_contenu {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Changement des polices d'écritures pour les résultats */
+.select2-results__options {
+  font-family: 'Raleway' !important;
+}
+
+/* espacement pour le bouton de soumission */
+.acf-form-submit {
+  margin-bottom: 2vh;
+}
+
+/* bouton de d'envoie de la leçon */
+.acf-button {
+  display: block;
+  margin: 2vh auto;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: #fafafa;
+  background-color: #9546FF;
+  border: none;
+  border-radius: 20px;
+}
+
+/* style pour le titre */
+.ajout_form {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 10px;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+/* media queries  */
+@media screen and (max-width: 700px) {
+  .ajout_form {
+    margin-top: 5vh;
+  }
+
+  .acf-form {
+    margin: 4vh 5vw 12vh 5vw;
+  }
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+style pour la page loop
+*/
+
+/*grille des lecons */
+
+/* marge exterieur entre les card et le bord de l'ecran */
+.marge_page {
+  padding: 5vh 2vw;
+  background-color: #F0F0F0;
+}
+
+/* grille des lecons */
+.lecons_grille {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5vw;
+  justify-items: center;
+  background-color: #f0F0F0;
+}
+
+@media (min-width: 768px) {
+  .lecons_grille {
+    grid-template-columns: repeat(2, 1fr);
+    ;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lecons_grille {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+style des cards (presque toutes ces classes sont réutiliser dans single-post.php
+            !!! alors vérifier a la fois les card et les pages des articles !)
+*/
+
+
+/* style des card des lecons */
+.card {
+  display: block;
+  background-color: #fafafa;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  font-family: 'Raleway';
+  box-shadow: 5px 5px 5px #6b656f80;
+  color: #000;
+}
+
+/* suprresions des styles des liens de la cards */
+.card a {
+  text-decoration: none;
+}
+
+/* style du bloc de l'image */
+.card-bloc_image {
+  margin: 0 auto;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* style de l'image */
+.card-bloc_image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* information sur l'auteur */
+.card-user_info {
+  margin: 10px 0;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* photo de profil de l'auteur */
+.user_image {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+/* style des niveaux */
+.card-niveau {
+  margin: 10px 0;
+  height: auto;
+}
+
+/* style des tags */
+.card-tags a {
+  font-size: 0.75rem;
+  color: #bd2ced;
+  text-decoration: none;
+}
+
+/* style du titre de la lecon */
+.card-titre {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Reem Kufi';
+  margin: 15px 0 10px 0;
+}
+
+/* style de la desription de la lecon */
+.card-text {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* marge du texte lire la lecon */
+.card-lien {
+  margin-top: 10px;
+}
+
+/* couleur du texte lire la lecon */
+.card-lien a {
+  color: #bd2ced;
+}
+
+
+
+
+
+/*----------------------------------------------------------------
+Page lecon
+*/
+
+/* menu fixe de la page single-post */
+.header_post {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1%;
+}
+
+/* ajout et supression de style du bouton retour en arriere */
+.button_back {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+}
+
+/* image du bouton*/
+.button_back-img {
+  border-radius: 5px;
+  width: 50px;
+}
+
+/* mise en forme de la page single-post */
+.single_post {
+  background-color: #F0F0F0;
+  margin-top: -10vh;
+  padding-top: 10vh;
+}
+
+/* style de la lecon */
+.lecon {
+  background-color: white;
+  border-radius: 20px;
+  margin: 5vh 5vw;
+  padding: 5% 5%;
+}
+
+/* image mise en avant dans la lecon */
+.lecon_image {
+  max-width: 400px;
+}
+
+/* info sur l'auteur*/
+.lecon-user_info {
+  margin: 20px 0;
+}
+
+/* style du groupe niveau + favorie */
+.lecon-info {
+  margin: 20px 0;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* niveau de la lecon */
+.lecon-niveau {
+  width: max-content;
+}
+
+/* style du groupe pour mettre une lecon en favorie */
+.wpfp-span {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 5px;
+  width: max-content;
+}
+
+/* icon pour mettre en favorie */
+.lecon-favorie img {
+  width: 20px;
+}
+
+/* texte pour mettre en favorie */
+.lecon-favorie .wpfp-link {
+  text-decoration: none;
+  font-family: "Reem Kufi";
+  font-size: 0.75rem;
+  color: #bd2ced;
+}
+
+/* style du groupe catégorie + etiquettes */
+.lecon-infos2 {
+  margin: 20px 0;
+}
+
+/* catégories */
+.lecon-categorie a {
+  font-size: 0.75rem;
+  background: #7032CF;
+  color: #F0F0F0;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Raleway";
+}
+
+/* tags de la lecon */
+.lecon-tags {
+  margin: 20px 0;
+}
+
+/* titre de la lecon */
+.lecon-titre {
+  font-family: "Reem Kufi";
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+/* texte de la lecon*/
+.lecon-text p {
+  font-family: "Raleway";
+  font-size: 1rem;
+}
+
+/* comportement de certain élément au-dessus d'une certaine taille */
+@media (min-width: 900px) {
+  .lecon {
+    margin: 5vh 5vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 1000px;
+  }
+
+  .lecon_image {
+    height: 400px;
+  }
+
+  .header_post {
+    top: 70px
+  }
+}
+
+@media (min-width: 1080px) {
+  .lecon {
+    margin: 5vh auto;
+  }
+}
+
+/* style du groupe des autres lecon */
+.autres_lecon {
+  margin: 20px 0;
+}
+
+/* titre de la partie "autres lecon" */
+.autres_lecon-titre {
+  background-color: #E1C6FF;
+  font-family: "Raleway";
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 20px 20vw 20px 0;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+style pour la page favories
+*/
+
+/* etandre la page pour qu'elle prenne minimum tout l'ecran */
+.favories {
+  min-height: 100vh;
+}
+
+/* style du titre de la page favorie */
+.favories-title {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Reem Kufi';
+  margin: 5vh 0
+}
+
+/* style des textes de la page favories */
+.favories-content,
+.favories-content a {
+  display: inline-block;
+  margin: 3vh 0;
+  color: #000;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'Raleway';
+  font-weight: bold;
+}
+
+/* style d'un lien lors d'un hover sur la page favorie */
+.favories-content a:hover {
+  color: #9546FF;
+}
+
+/* style des lien pour suprimer les lecons des favories */
+.favories-content .wpfp-link {
+  font-weight: normal;
+  margin: 10vw 0;
+  font-size: 1rem;
+}
+
+/* style des lien lors d'un hover pour suprimer une lecon des favories */
+.favories-content .wpfp-link:hover {
+  color: #f33a3a;
+}
+
+/* style du lien pour suprimer une lecon des favories */
+.favories-content .remove-parent {
+  margin: 0 10vw;
+}
+
+
+/* suppression d'un icon */
+.favories-content .wpfp-img {
+  display: none;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+Page 404
+*/
+/* import image de fond */
+.body_404 {
+  height: 100vh;
+  background-image: url("images/icones/fond_404.svg");
+  background-size: cover;
+  margin: 10px 20px;
+  overflow: hidden;
+}
+
+/* bloc parent pour centrer le text 404 et le logo */
+.bloc_404 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 70px;
+}
+
+/* changement de police */
+.bloc_404 p {
+  font-family: 'Raleway';
+  font-size: 10rem;
+}
+
+/* import de l'image pour la page */
+.bloc_404 img {
+  width: 140px;
+}
+
+/* style pour le texte page introuvable */
+.introuvable {
+  text-align: center;
+  color: #FFF;
+  font-family: 'Reem Kufi';
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+/* style pour le bouton retour */
+.retour {
+  margin: 40px auto;
+  width: 200px;
+  background-color: #E1C6FF;
+  border: 1px solid #E1C6FF;
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  font-family: 'Raleway';
+  text-align: center;
+}
+
+.retour a {
+  text-decoration: none;
+}
+
+/* hover sur le bouton retour */
+.retour:hover {
+  background-color: transparent;
+}
+
+.retour:hover a {
+  color: #fff;
+
+}
+
+/* centrer l'image au milieu */
+.bloc_centre_img_404 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+/* redimensionement de l'image */
+.img_404 {
+  width: 500px;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------
+Page politique de confidentialité */
+
+/* Couleur du background */
+.customize-support {
+  background-color: #f0f0f0;
+}
+
+/* espacement de la hauteur */
+.top_espace2 {
+  height: 70px;
+}
+
+/* style pour le titre  */
+.titre_politique {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+/* style + centré le contenu avec une width max de 1024 */
+.bloc_contenu {
+  font-family: 'Raleway';
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* espacement des paragraphes */
+.bloc_contenu p {
+  padding-top: 10px;
+  margin: 0 20px 0 20px;
+}
+
+/* espacement des titres et style */
+.bloc_contenu h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 20px 10px 20px;
+  ;
+}
+
+/* espacement bas */
+.bot_espace {
+  height: 70px;
+}
+
+/* media queries pour adapter la page au format téléphone */
+@media screen and (max-width: 1024px) {
+  .bloc_contenu {
+    padding: 0 10px 0 10px;
+  }
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------
+Page à propos */
+
+.bloc_contenu_à_propos {
+  font-family: 'Raleway';
+  margin: 0 auto;
+  max-width: 1360px;
+  height: max-content;
+  min-height: 80vh;
+}
+
+/* espacement des paragraphes */
+.bloc_contenu_à_propos p {
+  font-size: 1.25rem;
+  padding-top: 10px;
+  margin: 0 20px 0 20px;
+}
+
+/* espacement des titres et style */
+.bloc_contenu_à_propos h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0px 20px 10px 20px;
+}
+
+/* style des titres du à propos*/
+.titre_à_propos {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+/*style du texte qui somme nous*/
+.titre_qui_somme_nous {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 30px;
+  margin: 0 auto;
+
+}
+
+/* bloc des avatars en flex pour les mettre en ligne*/
+.bloc_contenu_avatar {
+  padding-top: 25px;
+  display: flex;
+}
+
+/*bloc avatar pour aligner en colone l'avatar et le petit texte de description*/
+.card .avatar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*texte center et width fixe du texte descriptif de l'équipe*/
+.description_equipe {
+  text-align: center;
+  width: 250px;
+}
+
+/*marge pour le bloc de text explicatif de l'équipe*/
+.bloc_txt_explicatif p {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  /*redimension du bloc à propos pour les devices plus petits*/
+  .bloc_contenu_à_propos {
+    padding: 0 10px 0 10px;
+  }
+}
+
+/* grille des avatars */
+.bloc_contenu_avatar {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5vw;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .bloc_contenu_avatar {
+    grid-template-columns: repeat(2, 1fr);
+    ;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bloc_contenu_avatar {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

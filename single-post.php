@@ -28,7 +28,7 @@
                 </figcaption>
             </figure>
     
-            <div class="lecon-info2">
+            <div class="lecon-info">
                 <div class="card-niveau lecon-niveau">
                     <?php $category = get_field('niveau');
                         if (($category == 1) || ($category == 0)) {
@@ -63,7 +63,7 @@
                 </div>
             </div>
         
-            <div class="lecon-infos">
+            <div class="lecon-infos2">
                 <!-- Appel de la catégorie de l'article -->
                 <p class="lecon-categorie">
                     <?php 
