@@ -1038,12 +1038,11 @@ Page lecon
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   padding: 1%;
 }
 
 /* ajout et supression de style du bouton retour en arriere */
-.button_back {
+button {
   border: none;
   background: transparent;
   cursor: pointer;
@@ -1137,6 +1136,29 @@ Page lecon
 /* tags de la lecon */
 .lecon-tags {
   margin: 20px 0;
+}
+
+.lecon-sup {
+  padding: 10px;
+  background-color: #f33a3a50;
+  border: 2px solid #f33a3a;
+  border-radius: 10px;
+  display: flex;
+}
+
+.lecon-sup:hover {
+  background-color: #f33a3a;
+}
+
+.lecon-sup a {
+  font-family: "Reem Kufi";
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.lecon-sup a:hover {
+  color: #f0F0F0;
 }
 
 /* titre de la lecon */

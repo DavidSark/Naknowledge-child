@@ -143,5 +143,12 @@ function redirect_non_logged_users_to_specific_page() {
     if ( !is_user_logged_in() && (is_page('profile') || is_page('creer-une-lecon') || is_page('favories')) ){
     wp_redirect( 'http://localhost/naknowledge/log-in/' ); 
         exit;
-   }
+   };
+
+   /* redirection de page lorsqu'un article est supprimer */
+   $link = $_SERVER['REQUEST_URI'];
+   if (strpos($link, 'trashed') !== false) {
+    header("Location: http://localhost/naknowledge/naknowlecons/");
+    exit();
+}
 }

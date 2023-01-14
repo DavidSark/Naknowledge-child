@@ -81,6 +81,14 @@
                         }
                     ?>
                 </p>
+
+                <?php if ($post->post_author == $current_user->ID) { ?>
+                   <button class="lecon-sup"><a onclick="return confirm('Voulez vous vraiment supprimer cette naknowleçon ?')"
+                        href="<?php echo get_delete_post_link( $post->ID );?>">
+                        Supprimer la leçon
+                    </a></button>
+                <?php } ?>
+
             </div>
         </div>
     
@@ -90,6 +98,7 @@
             <div class="lecon-text"><?php the_field('contenu_lecon') ?></div>
         </div>
 
+    
     </div>
     
     <div class="autres_lecon">
