@@ -954,7 +954,8 @@ style des cards (presque toutes ces classes sont réutiliser dans single-post.ph
 }
 
 /* style du bloc de l'image */
-.card-bloc_image {
+.card-bloc_image,
+.wp-post-image {
   margin: 0 auto;
   height: 250px;
   overflow: hidden;
@@ -980,7 +981,8 @@ style des cards (presque toutes ces classes sont réutiliser dans single-post.ph
 }
 
 /* photo de profil de l'auteur */
-.user_image {
+.user_image,
+.avatar {
   border-radius: 100%;
   overflow: hidden;
 }
@@ -1232,6 +1234,24 @@ style pour la page favories
   min-height: 90vh;
 }
 
+/* cards de la page favorie */
+.card_favoris {
+  display: inline-block;
+  background-color: #fafafa;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: max-content;
+  max-width: 300px;
+  padding: 20px;
+  font-family: 'Raleway';
+  box-shadow: 5px 5px 5px #6b656f80;
+  color: #000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* style du titre de la page favorie */
 .favories-title {
   font-size: 4rem;
@@ -1246,19 +1266,20 @@ style pour la page favories
   height: auto;
 }
 
+/* comportement des éléments de la page */
 .favories-content .wpfp-span {
+  margin: auto;
   display: block;
 }
 
 /* style des textes de la page favories */
 .favories-content,
 .favories-content a {
-  display: inline-block;
-  margin: 3vh 0;
+  margin: 2vh 0;
   color: #000;
   text-decoration: none;
-  font-size: 2rem;
-  font-family: 'Raleway';
+  font-size: 1.5rem;
+  font-family: 'Reem Kufi';
   font-weight: bold;
 }
 
@@ -1269,30 +1290,42 @@ style pour la page favories
 
 /* style des lien pour suprimer les lecons des favories */
 .favories-content .wpfp-link {
+  grid: none;
   font-weight: normal;
-  margin: 10vw 0;
+  margin: 10px -20px -20px -20px;
+  width: 100%;
+  padding: 20px;
   font-size: 1rem;
-  color: #f33a3a;
-
+  background-color: #f33a3a50;
+  color: #000;
+  text-align: center;
 }
 
 /* style des lien lors d'un hover pour suprimer une lecon des favories */
 .favories-content .wpfp-link:hover {
-  color: #bb0000;
+  background-color: #f33a3a;
+  color: #F0F0F0;
 }
 
-/* style du lien pour suprimer une lecon des favories */
-.favories-content .remove-parent {
-  margin: 0 10vw;
+/* description de la lecon sur la card */
+#fav-card_text {
+  margin: 5px 0;
+  font-size: 1rem;
+  font-family: "Raleway";
+  font-weight: normal;
 }
-
 
 /* suppression d'un icon */
 .favories-content .wpfp-img {
   display: none;
 }
 
-
+/* lien pour supprimer tous les favories */
+.wpfp-span>.wpfp-link {
+  display: block;
+  width: max-content;
+  margin: 40px auto;
+}
 
 
 

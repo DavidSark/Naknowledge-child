@@ -8,7 +8,9 @@
         </h1>
 
         <div class="favories-content">
-            <?php the_content()?>
+           
+           <?php echo do_shortcode('[wp-favorite-posts]'); ?>
+
         </div>
     </div>
 
