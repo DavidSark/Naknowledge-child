@@ -1138,6 +1138,7 @@ button {
   margin: 20px 0;
 }
 
+/* bouton suprrimer la lecon */
 .lecon-sup {
   padding: 10px;
   background-color: #f33a3a50;
@@ -1146,10 +1147,12 @@ button {
   display: flex;
 }
 
+/* hover bouton suprrimer la lecon */
 .lecon-sup:hover {
   background-color: #f33a3a;
 }
 
+/* lien bouton suprrimer la lecon */
 .lecon-sup a {
   font-family: "Reem Kufi";
   font-size: 1rem;
@@ -1157,6 +1160,7 @@ button {
   color: black;
 }
 
+/* hover lien bouton suprrimer la lecon */
 .lecon-sup a:hover {
   color: #f0F0F0;
 }
@@ -1225,7 +1229,7 @@ style pour la page favories
 
 /* etandre la page pour qu'elle prenne minimum tout l'ecran */
 .favories {
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 /* style du titre de la page favorie */
@@ -1234,6 +1238,16 @@ style pour la page favories
   font-weight: bold;
   font-family: 'Reem Kufi';
   margin: 5vh 0
+}
+
+/* taille de l'icon du titre */
+.favorie-img {
+  width: 40px;
+  height: auto;
+}
+
+.favories-content .wpfp-span {
+  display: block;
 }
 
 /* style des textes de la page favories */
