@@ -228,7 +228,7 @@ Menu Header
 }
 
 /* cacher le menu ordi en-dessus d'une certaine taille d'ecran */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .header_ordi {
     display: none;
   }
@@ -331,7 +331,7 @@ style pour le footer
 
 
 /* ------------------------------------------------------------------------------------------------------- 
-style pour le menu des lecons
+style pour le menu des catégories
 */
 
 /* menu pour rechercher les lecons */
@@ -654,6 +654,7 @@ style pour la page loop
 .card-tags a {
   font-size: 0.75rem;
   color: #bd2ced;
+  text-decoration: none;
 }
 
 /* style du titre de la lecon */
@@ -737,29 +738,9 @@ style pour la page favories
   display: none;
 }
 
-/*Mise en forme page article*/
-
-/* ------------------------------------------------------------------------------------------------------- 
-Mise en forme page profil
-*/
 
 
-/* #header-cover-image {
-  display: none;
-  visibility: hidden;
-}
 
-.field_display-name,
-.field_email,
-.field_website {
-  display: none;
-}
-
-.wpum-template,
-.wpum-profile-page {
-  margin: 0;
-  padding: 0;
-} */
 
 /* ------------------------------------------------------------------------------------------------------- 
 Page 404
@@ -1084,6 +1065,159 @@ Page du formulaire pour ajouter des leçons*/
   }
 }
 
+
+
+/*----------------------------------------------------------------
+Page lecon
+*/
+
+.header_post {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1%;
+}
+
+.button_back {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+}
+
+.button_back-img {
+  border-radius: 5px;
+  width: 50px;
+}
+
+.single_post {
+  background-color: #F0F0F0;
+  margin-top: -10vh;
+  padding-top: 10vh;
+
+}
+
+.lecon {
+  background-color: white;
+  border-radius: 20px;
+  margin: 5vh 5vw;
+  padding: 5% 5%;
+}
+
+.lecon_image {
+  max-width: 400px;
+}
+
+.lecon-user_info {
+  margin: 20px 0;
+}
+
+.lecon-info2 {
+  margin: 20px 0;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lecon-niveau {
+  width: max-content;
+}
+
+.wpfp-span {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 5px;
+  width: max-content;
+}
+
+.lecon-favorie img {
+  width: 20px;
+}
+
+.lecon-favorie .wpfp-link {
+  text-decoration: none;
+  font-family: "Reem Kufi";
+  font-size: 0.75rem;
+  color: #bd2ced;
+}
+
+.lecon-infos {
+  margin: 20px 0;
+}
+
+.lecon-user_name {
+  font-size: 1rem;
+  color: black;
+}
+
+.lecon-categorie a {
+  font-size: 0.75rem;
+  background: #7032CF;
+  color: #F0F0F0;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Raleway";
+}
+
+
+.lecon-tags {
+  margin: 20px 0;
+}
+
+.lecon-titre {
+  font-family: "Reem Kufi";
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.lecon-text p {
+  font-family: "Raleway";
+  font-size: 1rem;
+}
+
+@media (min-width: 900px) {
+  .lecon {
+    margin: 5vh 5vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 1000px;
+  }
+
+  .lecon_image {
+    height: 400px;
+  }
+
+  .header_post {
+    top: 70px
+  }
+}
+
+@media (min-width: 1080px) {
+  .lecon {
+    margin: 5vh auto;
+  }
+}
+
+.autres_lecon {
+  margin: 20px 0;
+}
+
+.autres_lecon-titre {
+  background-color: #E1C6FF;
+  font-family: "Raleway";
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 20px 20vw 20px 0;
+
+}
 
 
 
