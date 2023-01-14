@@ -152,3 +152,13 @@ function redirect_non_logged_users_to_specific_page() {
     exit();
 }
 }
+
+
+/* fonction qui permet de renvoyer seulement des articles, et non des pages, lors d'une recherche */
+function search_filter($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+add_filter('pre_get_posts','search_filter');
