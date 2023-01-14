@@ -320,7 +320,7 @@ style pour le footer
 
 /* espace pour rendre toute la page visible lorsque le menu ordinateur est activé */
 .top_espace {
-  height: 50px;
+  height: 10px;
   background-color: #9546FF;
 }
 
@@ -888,6 +888,11 @@ style pour la page loop
 /* style de la requette afficher dans le titre */
 .search-requette {
   color: #7032CF;
+}
+
+/* classe secial pour l'archive */
+.archive {
+  margin: 20px 5px;
 }
 
 /*------------------
