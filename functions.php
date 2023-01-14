@@ -133,3 +133,15 @@ add_action( 'wp_enqueue_scripts', 'nano_theme_name_scripts' );
 //     wp_enqueue_script( 'my_script', get_template_directory_uri() . '/js/my_script.js', array( 'jquery' ), '1.0', true );
 // }
 // add_action( 'wp_enqueue_scripts', 'my_scripts' );
+
+
+
+// redirection pour les non-connectés : 
+//seulement depuis accueil (si page des derniers articles)
+add_action( 'template_redirect', 'redirect_non_logged_users_to_specific_page' );
+function redirect_non_logged_users_to_specific_page() {
+    if ( !is_user_logged_in() && (is_page('profile') || is_page('creer-une-lecon') || is_page('favories')) ){
+    wp_redirect( 'http://localhost/naknowledge/log-in/' ); 
+        exit;
+   }
+}
