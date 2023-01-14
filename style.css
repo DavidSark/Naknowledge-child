@@ -166,6 +166,7 @@ Menu Header
   text-decoration: none;
   width: 100%;
   padding: 2vh 0;
+  height: 30px;
   font-size: 1.5rem;
   background-color: #9546FF;
 }
@@ -320,7 +321,7 @@ style pour le footer
 
 /* espace pour rendre toute la page visible lorsque le menu ordinateur est activé */
 .top_espace {
-  height: 10px;
+  height: 30px;
   background-color: #9546FF;
 }
 
@@ -345,7 +346,7 @@ style pour le menu des catégories sur loop
   background-color: #9546FF;
   color: #fafafa;
   font-size: 1rem;
-  padding: 3.5vh 2vw 1vh 2vw;
+  padding: 0 2vw 2vh 2vw;
 }
 
 /* style des liens du menu des lecons */
@@ -364,7 +365,7 @@ style pour le menu des catégories sur loop
 
 /* style de la bar des categories */
 .menu-categories {
-  margin: 1vh auto;
+  margin: 2vh auto;
   width: 100%;
 }
 
@@ -662,9 +663,15 @@ publiées */
   margin: 0 5vw 0vh 5vw;
 }
 
-/* hover pour la consultation des favoris */
-.mes_favoris:hover {
+/* hover pour les boutons de la page profil*/
+.mes_favoris:hover,
+.wp-block-loginout:hover a,
+.cgu_hover:hover,
+.politique_hover:hover,
+.a_propos_hover:hover,
+.mentions_hover:hover {
   text-decoration: underline;
+  color: rgba(189, 44, 237, .50);
 }
 
 /* boutton déconnexion */
@@ -673,19 +680,29 @@ publiées */
   display: block;
   text-decoration: none;
   color: rgba(189, 44, 237, .50);
-  margin: 5vh 5vw 0vh 5vw;
+  padding: 5vh 5vw 0vh 5vw;
   text-align: right !important;
 }
+
+/* Boutons liens d'informations */
+.margin_lien_info {
+  font-family: 'Raleway';
+  font-size: 0.75rem;
+  margin: 5vh 5vw 0vh 5vw;
+}
+
+.margin_lien_info a {
+  text-decoration: none;
+  color: rgba(189, 44, 237, .50);
+}
+
+
 
 @media screen and (max-width: 700px) {
   #post-122 {
     margin: 4vh 5vw 4vh 5vw;
   }
 }
-
-
-
-
 
 /* -------------------------------------------------------------------------------------
 page modification profile */
@@ -744,10 +761,6 @@ page modification profile */
     margin: 4vh 5vw 4vh 5vw;
   }
 }
-
-
-
-
 
 /*---------------------------------------------------------------------------------------
 Page du formulaire pour ajouter des leçons*/
