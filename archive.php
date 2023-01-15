@@ -28,7 +28,7 @@
     </div>
     <?php the_posts_pagination();?>
 <?php else: ?>
-    <h1>Il n'y a pas de naknowlecon dans cette catégorie.</h1>
+    <h1 class="archive_none">Il n'y a pas de naknowlecon dans cette catégorie.</h1>
 <?php endif; ?>
 
 <?php get_footer()?>

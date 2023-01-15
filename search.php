@@ -31,7 +31,7 @@
         </div>
         <?php the_posts_pagination();?>
     <?php else: ?>
-        <h1>Il n'y a pas de naknowleçon dcorrepondant à votre recherche.</h1>
+        <h1 class="archive_none">Il n'y a pas de naknowleçon dcorrepondant à votre recherche.</h1>
     <?php endif; ?>
     
 </div>

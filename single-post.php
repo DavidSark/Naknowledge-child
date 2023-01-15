@@ -17,16 +17,6 @@
                 ?>  
                 <?php the_post_thumbnail('medium' )?>   
             </div>
-        
-            <figure class="card-user_info lecon-user_info">
-                <!-- Appel de l'image de profil et du nom de l'auteur de l'article-->
-                <fig class="user_image lecon-user_image">
-                    <?php echo get_avatar( get_the_author_email(), 35 );?>
-                </fig>
-                <figcaption class="user_name">
-                    <?php the_author()?>
-                </figcaption>
-            </figure>
     
             <div class="lecon-info">
                 <div class="card-niveau lecon-niveau">
