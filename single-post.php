@@ -22,27 +22,27 @@
                 <div class="card-niveau lecon-niveau">
                     <?php $category = get_field('niveau');
                         if (($category == 1) || ($category == 0)) {
-                            echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_1.svg"/>';
+                            echo '<img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/niveau_1.svg"/>';
                         }
                     ?>
                     <?php $category = get_field('niveau');
                         if ($category == 2) {
-                            echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_2.svg"/>';
+                            echo '<img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/niveau_2.svg"/>';
                         }
                     ?>
                     <?php $category = get_field('niveau');
                         if ($category == 3) {
-                            echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_3.svg"/>';
+                            echo '<img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/niveau_3.svg"/>';
                         }
                     ?>
                     <?php $category = get_field('niveau');
                         if ($category == 4) {
-                            echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_4.svg"/>';
+                            echo '<img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/niveau_4.svg"/>';
                         }
                     ?>
                     <?php $category = get_field('niveau');
                         if ($category == 5) {
-                            echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_5.svg"/>';
+                            echo '<img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/niveau_5.svg"/>';
                         }
                     ?>
             
@@ -116,7 +116,7 @@
 
             if ( $related_query->have_posts() ) : ?>
 
-            <h2 class="autres_lecon-titre">Naknowleçons en rapport</h2>
+            <h2 class="autres_lecon-titre">Naknowleçons en lien</h2>
 
             <div class="lecons_grille">
                 <?php while ( $related_query->have_posts() ) : $related_query->the_post(); ?>

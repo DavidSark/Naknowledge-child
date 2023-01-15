@@ -13,7 +13,7 @@
     <h2 class="titre_qui_somme_nous">Qui sommes nous ?</h2>
     <div class="bloc_contenu_avatar">
         <div class="avatar-a_propos">
-            <img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/avatar_melina.svg" alt="avatar concepteur">
+            <img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/avatar_melina.svg" alt="avatar concepteur">
             <div class="description_equipe">
                 <p>Mélina Bouchelleghem </p> 
                 <p>Responsable de CDP & développeuse web</p>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="avatar-a_propos">
-            <img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/avatar_david.svg" alt="avatar concepteur">
+            <img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/avatar_david.svg" alt="avatar concepteur">
             <div class="description_equipe">
                 <p>David Sarkissian</p> 
                 <p>Chargé de com’ & développeur web</p>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="avatar-a_propos">
-            <img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/avatar_aurelie.svg" alt="avatar concepteur">
+            <img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/avatar_aurelie.svg" alt="avatar concepteur">
             <div class="description_equipe">
                 <p>Aurélie Runser</p> 
                 <p>Chargé de com’ & développeuse web</p>
@@ -37,7 +37,7 @@
         </div>
 
         <div class="avatar-a_propos">
-            <img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/avatar_rose.svg" alt="avatar concepteur">
+            <img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/avatar_rose.svg" alt="avatar concepteur">
             <div class="description_equipe">
                 <p>Rose Menegain</p> 
                 <p>Responsable de design</p>

@@ -22,8 +22,8 @@
         </div>
 
         <div class="bg_img">
-            <img class="img_mobile" src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/landing_page_fond.png" alt="image de fond pour l'accueil">
-            <img class="img_pc" src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/landing_page_fond_pc.png" alt="image de fond pour l'accueil">
+            <img class="img_mobile" src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/landing_page_fond.png" alt="image de fond pour l'accueil">
+            <img class="img_pc" src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/landing_page_fond_pc.png" alt="image de fond pour l'accueil">
 
             <h2 class="titre_landing">
                 Améliorez et partagez
@@ -33,15 +33,15 @@
     
             <div class="bloc_center_bouton_landing">
                 <div class="bloc_bouton_landing">
-                    <img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/logo_naknow.svg" alt="logo naknowledge">
+                    <img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/logo_naknow.svg" alt="logo naknowledge">
                     <a href="<?= get_post_type_archive_link('post')?>">Découvrir les Naknowleçons</a>
                 </div>
             </div>
     
             <div class="bloc_center_bouton_landing">
                 <div class="bloc_bouton_landing">
-                    <img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/logo_naknow.svg" alt="logo naknowledge">
-                    <a href="http://localhost/naknowledge/log-in/">Partagez vos Naknowleçons</a>
+                    <img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/logo_naknow.svg" alt="logo naknowledge">
+                    <a href="https://davidsarkissian.fr/log-in/">Partagez vos Naknowleçons</a>
                 </div>
             </div>
         </div>
@@ -65,8 +65,8 @@
                 <div class="bloc_info-deco deco_3"></div>
                 <div class="bloc_info-deco deco_4"></div>
 
-                <img class="info_img-img info_img-img_1" src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/landing_page-apprenez_1.jpg" alt="photo d'un utilisateur de naknowledge dans le bus">
-                <img class="info_img-img info_img-img_2" src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/landing_page-apprenez_2.jpg" alt="photo d'un utilisateur de naknowledge à son burreau">
+                <img class="info_img-img info_img-img_1" src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/landing_page-apprenez_1.jpg" alt="photo d'un utilisateur de naknowledge dans le bus">
+                <img class="info_img-img info_img-img_2" src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/landing_page-apprenez_2.jpg" alt="photo d'un utilisateur de naknowledge à son burreau">
             </div>
         </div>
 
@@ -88,8 +88,8 @@
                 <div class="bloc_info-deco deco_3"></div>
                 <div class="bloc_info-deco deco_4"></div>
 
-                <img class="info_img-img info_img-img_1" src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/landing_page-partagez_1.jpg" alt="photo d'un utilisateur de naknowledge dans le bus">
-                <img class="info_img-img info_img-img_2" src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/landing_page-partagez_2.jpg" alt="photo d'un utilisateur de naknowledge à son burreau">
+                <img class="info_img-img info_img-img_1" src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/landing_page-partagez_1.jpg" alt="photo d'un utilisateur de naknowledge dans le bus">
+                <img class="info_img-img info_img-img_2" src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/landing_page-partagez_2.jpg" alt="photo d'un utilisateur de naknowledge à son burreau">
             </div>
         </div>
         

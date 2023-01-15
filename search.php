@@ -18,7 +18,6 @@
 
 <h1 class="search_titlte">Résultat de la recherche :<span class="search-requette"> <?= get_search_query() ?></span></h1>
 
-
 <div class="archive">
     <?php if (have_posts()): ?>
         <div class="lecons_grille">

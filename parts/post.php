@@ -22,31 +22,30 @@
                    <?php 
                        $category = get_field('niveaux_de_difficulte');
                        if (($category == 1) || ($category == 0)) {
-                           echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_1.svg"/>';
+                           echo '<img src="https://davidsarkissian.fr/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_1.svg"/>';
                        }
                    ?>
                    <?php 
                        $category = get_field('niveaux_de_difficulte');
                        if ($category == 2) {
-                           echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_2.svg"/>';
+                           echo '<img src="https://davidsarkissian.fr/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_2.svg"/>';
                        }
                    ?>
                    <?php 
                        $category = get_field('niveaux_de_difficulte');
                        if ($category == 3) {
-                           echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_3.svg"/>';
+                           echo '<img src="https://davidsarkissian.fr/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_3.svg"/>';
                        }
                    ?>
                    <?php 
                        $category = get_field('niveaux_de_difficulte');
                        if ($category == 4) {
-                           echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_4.svg"/>';
+                           echo '<img src="https://davidsarkissian.fr/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_4.svg"/>';
                        }
                    ?>
                    <?php 
                        $category = get_field('niveaux_de_difficulte');
                        if ($category == 5) {
-                           echo '<img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/niveau_5.svg"/>';
                        }
                    ?>
 
