@@ -20,29 +20,6 @@ function naknowledge_supports (){
 }
 
 
-function montheme_init() {
-    register_taxonomy('jeux_video', 'post', [
-        'labels' => [
-            'name' => 'Jeux Vidéo',
-        ],
-        'show_in_rest' => true,
-        'hierarchical' => true,
-        'show_admin_column' => true,
-    ]);
-    register_taxonomy('dev', 'post', [
-        'labels' => [
-            'name' => 'dev',
-        ],
-        'show_in_rest' => true,
-        'hierarchical' => true,
-        'show_admin_column' => true,
-    ]);
-  
-}
-
-add_action('init', 'montheme_init');
-
-
 //fonction pour changer le séparateur du titre du docuement (dans l'onglet)
 
 function naknowledge_title_separator(){
@@ -110,16 +87,6 @@ function limiter_longueur_description($description) {
 add_filter( 'the_excerpt', 'limiter_longueur_description' );
 
 
-// pour le profil à revoir
-// function display_user_email_by_slug() {
-//     $user_slug = get_query_var( 'author_name' );
-//     $user = get_user_by( 'slug', $user_slug );
-//     if( !empty( $user ) ) {
-//         $email = $user->user_email;
-//         echo '<p>Adresse e-mail : '.$email.'</p>';
-//     }
-// }
-
 //Ajout de la feuille de style : 
 function nano_theme_name_scripts() {
 	wp_enqueue_style( 'style-name', get_stylesheet_uri() );
@@ -127,16 +94,7 @@ function nano_theme_name_scripts() {
 add_action( 'wp_enqueue_scripts', 'nano_theme_name_scripts' );
 
 
-
-// // /Ajout des scripts : 
-// function my_scripts() {
-//     wp_enqueue_script( 'my_script', get_template_directory_uri() . '/js/my_script.js', array( 'jquery' ), '1.0', true );
-// }
-// add_action( 'wp_enqueue_scripts', 'my_scripts' );
-
-
-
-// redirection pour les non-connectés : 
+// redirection : 
 //seulement depuis accueil (si page des derniers articles)
 add_action( 'template_redirect', 'redirect_non_logged_users_to_specific_page' );
 function redirect_non_logged_users_to_specific_page() {
