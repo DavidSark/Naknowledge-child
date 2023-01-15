@@ -162,7 +162,7 @@ Menu Header
 /* menu */
 .menu-header {
   z-index: 50;
-  position: fixed;
+  /* position: fixed; */
   text-decoration: none;
   width: 100%;
   padding: 2vh 0;
@@ -244,15 +244,25 @@ style pour le footer
 */
 
 /* style general du footer */
-.menu-footer {
+.menu-footer,
+.landing_menu-footer {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   padding: 2vh 0;
   font-size: 0.75rem;
   color: #fafafa;
   background-color: #9546FF;
+}
+
+.landing_menu-footer {
+  gap: 50px 100px;
+}
+
+.landing_menu-footer .footer_pages_info {
+  width: auto;
 }
 
 /* style des liens du footer */
@@ -305,6 +315,7 @@ style pour le footer
   grid-template-columns: 1fr 1fr;
   font-size: 0.75rem;
   justify-content: space-around;
+  gap: 10px;
 }
 
 /* marge vertical des liens de l'esapce info */
@@ -316,6 +327,10 @@ style pour le footer
 @media (max-width: 900px) {
   .menu-footer {
     display: none;
+  }
+
+  .landing_menu-footer {
+    display: flex;
   }
 }
 
@@ -1567,4 +1582,245 @@ Page à propos */
   .bloc_contenu_avatar {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+
+/* --------------------------------------------------------------------------------------
+Landing page */
+
+/* 1er bloc de la page */
+.bg_img {
+  position: relative;
+  padding: 50px 0;
+}
+
+/* mise en place du background image */
+.bg_img>img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  bottom: -10%
+}
+
+/* cache de l'image en format mobils */
+.img_pc {
+  display: none;
+}
+
+/* style de la tagline */
+.titre_landing {
+  font-family: 'Reem Kufi';
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 500;
+  padding: 8vh 8vw 5vh 8vw;
+  line-height: 2rem;
+}
+
+/* logo flex avec le bouton s'inscrire */
+.bloc_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 5vw;
+  background: rgb(120, 21, 253)
+}
+
+/* taille du logo dans le menu */
+.logo_landing {
+  width: 60px;
+}
+
+/* style bouton inscription */
+.inscription_landing {
+  font-family: 'Raleway';
+  text-decoration: none;
+  border: 2px solid #E1C6FF;
+  background-color: #E1C6FF;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 6px 8px;
+}
+
+/* hover sur le bouton s'inscire */
+.inscription_landing:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* bloc pour center le bouton découvrir les leçons */
+.bloc_center_bouton_landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway';
+  margin-bottom: 2rem;
+}
+
+
+/* style du bouton avec logo  */
+.bloc_bouton_landing {
+  padding: 6px 8px;
+  display: flex;
+  gap: 5px;
+  border: 1px solid #E1C6FF;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #E1C6FF;
+}
+
+.bloc_bouton_landing:hover,
+.bloc_bouton_landing:hover a {
+  background-color: transparent;
+  color: #fff;
+}
+
+
+/* style des liens  */
+.bloc_bouton_landing a {
+  text-decoration: none;
+}
+
+/* taille du logo dans le bouton */
+.bloc_bouton_landing img {
+  width: 25px;
+}
+
+/* blocs "apprenez" et "partagez" */
+.bloc_info {
+  margin: 10vh 0;
+  padding: 5%;
+  border: 1px #F0F0F0 solid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* textes des blocs "apprenez" et "partagez" */
+.info_text {
+  position: relative;
+  color: #F0F0F0;
+  font-family: "Raleway";
+  font-size: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* titre des blocs */
+.info_text-titre {
+  font-family: "Reem Kufi";
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+/* paragraphes des blocs */
+.info_text_paragraphe {
+  margin: 20px 0;
+}
+
+/* bloc des 2 images */
+.info_img {
+  position: relative;
+  margin: 20px auto;
+  display: flex;
+  gap: 5vw;
+}
+
+/* images */
+.info_img-img {
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  flex: none;
+}
+
+/* 2eme images qui disparait en format mobile */
+.info_img-img_2 {
+  display: none;
+}
+
+/* trait pour decore */
+.bloc_info-deco {
+  position: absolute;
+  background: #F0F0F0;
+}
+
+.deco_1,
+.deco_2,
+.deco_3,
+.deco_4 {
+  display: none;
+}
+
+@media screen and (min-width:630px) {
+  .info_text_paragraphe {
+    margin: 40px 0 40px 10%;
+  }
+
+  .info_img-img_2 {
+    display: block;
+  }
+
+  .deco_1 {
+    display: block;
+    width: 1px;
+    height: 70%;
+    top: 90px;
+    left: -5%;
+  }
+
+  .deco_2 {
+    display: block;
+    width: 1px;
+    height: 40%;
+    bottom: -10%;
+    left: -8%;
+  }
+}
+
+
+
+@media screen and (min-width:900px) {
+  .img_pc {
+    display: block;
+  }
+
+  .img_mobile {
+    display: none;
+  }
+
+  .info_text,
+  .info_img {
+    margin: 0;
+  }
+
+  .deco_1 {
+    left: 0;
+  }
+
+  .deco_2 {
+    left: -3%;
+  }
+
+  .deco_3 {
+    display: block;
+    width: 110%;
+    height: 1px;
+    top: -35%;
+    right: 10%;
+  }
+
+  .deco_4 {
+    display: block;
+    width: 60%;
+    height: 1px;
+    top: -25%;
+    right: 0;
+  }
+
 }
