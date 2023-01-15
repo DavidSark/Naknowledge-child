@@ -1278,7 +1278,9 @@ style pour la page favories
 
 /* etandre la page pour qu'elle prenne minimum tout l'ecran */
 .favories {
+  width: 100vw;
   min-height: 90vh;
+  overflow-x: hidden;
 }
 
 /* cards de la page favorie */
@@ -1301,10 +1303,13 @@ style pour la page favories
 
 /* style du titre de la page favorie */
 .favories-title {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bold;
   font-family: 'Reem Kufi';
-  margin: 5vh 0
+  margin: 5vh 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* taille de l'icon du titre */
