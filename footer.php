@@ -2,7 +2,7 @@
        
         <nav class="menu-footer">
 
-          <a href="https://davidsarkissian.fr/">Naknowledge</a>
+          <a href="https://davidsarkissian.fr/naknowlecons">Naknowledge</a>
 
           <div class="footer_contact">
             <div class="footer_contact-items">
@@ -12,7 +12,7 @@
               <img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/icone_fb.svg" alt="icone facebool ">
             </div>
 
-            <a href="#">naknowledge@gmail.com</a>
+            <a href="naknowledgeteam@gmail.com">naknowledgeteam@gmail.com</a>
           </div>
 
           <div class="footer_pages_info">

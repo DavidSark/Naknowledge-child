@@ -33,4 +33,5 @@
         <h1>Il n'y a pas d'articles !</h1>
 
     <?php endif; ?>
+    <div class="bot_espace"></div>
 </div>

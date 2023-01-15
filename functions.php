@@ -99,14 +99,14 @@ add_action( 'wp_enqueue_scripts', 'nano_theme_name_scripts' );
 add_action( 'template_redirect', 'redirect_non_logged_users_to_specific_page' );
 function redirect_non_logged_users_to_specific_page() {
     if ( !is_user_logged_in() && (is_page('profile') || is_page('creer-une-lecon') || is_page('favories')) ){
-    wp_redirect( 'http://localhost/naknowledge/log-in/' ); 
+    wp_redirect( 'http://davidsakissian/log-in/' ); 
         exit;
    };
 
    /* redirection de page lorsqu'un article est supprimer */
    $link = $_SERVER['REQUEST_URI'];
    if (strpos($link, 'trashed') !== false) {
-    header("Location: http://localhost/naknowledge/naknowlecons/");
+    header("Location: http://davidsakissian/naknowlecons/");
     exit();
 }
 }

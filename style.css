@@ -510,9 +510,9 @@ style pour la page login et register
 
 /* texte vers condition d'utilisation... */
 .form_login .text_login {
-  margin: 5vh auto 0 auto;
+  margin: 2vh auto 0 auto;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1rem;
   text-align: center;
   max-width: 80%;
 }
@@ -860,17 +860,12 @@ Page du formulaire pour ajouter des leçons*/
 
 /* style pour le titre */
 .ajout_form {
-  font-family: 'Raleway';
+  font-family: 'Reem Kufi';
   font-weight: bold;
   font-size: 2rem;
   padding-top: 10px;
   margin-top: 10vh;
   text-align: center;
-}
-
-/* redimension de l'espace image */
-#ajout_image {
-  margin-bottom: -300px;
 }
 
 /* media queries  */
@@ -882,8 +877,14 @@ Page du formulaire pour ajouter des leçons*/
   .acf-form {
     margin: 4vh 5vw 12vh 5vw;
   }
+}
 
+@media (min-width: 900px) {
 
+  /* redimension de l'espace image */
+  #ajout_image {
+    margin-bottom: -300px;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------- 
@@ -1089,7 +1090,6 @@ button {
   border: none;
   background: transparent;
   cursor: pointer;
-
 }
 
 /* image du bouton*/
@@ -1117,10 +1117,7 @@ button {
 
 /* image mise en avant dans la lecon */
 .lecon_image {
-  max-width: 500px;
-  min-width: 400px;
-  max-height: 500px;
-  min-height: 400px;
+  max-width: 400px;
 }
 
 /* info sur l'auteur*/
@@ -1226,6 +1223,7 @@ button {
   font-family: "Raleway";
   font-size: 1rem;
   margin: 20px 0;
+  max-width: 500px;
 }
 
 /* comportement de certain élément au-dessus d'une certaine taille */
@@ -1241,6 +1239,7 @@ button {
 
   .lecon_image {
     height: 400px;
+    width: 400px;
   }
 
   .header_post {
@@ -1508,7 +1507,15 @@ Page politique de confidentialité */
 
 /* espacement bas */
 .bot_espace {
-  height: 70px;
+  display: none;
+}
+
+/* retirer l'espace du bas des pages en-dessus d'une certaine taille d'ecran */
+@media (max-width: 900px) {
+  .bot_espace {
+    display: block;
+    height: 70px;
+  }
 }
 
 /* media queries pour adapter la page au format téléphone */
