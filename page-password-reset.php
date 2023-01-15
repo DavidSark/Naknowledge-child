@@ -6,9 +6,9 @@
 <!--image de fond des les exagones en haut a droite-->
 
 
-<h1 class="title_login">Nous sommes contents de vous (re)voir !</h1>
+<h1 class="title_login">On vous renvoie vite votre mot de passe !</h1>
 
-<div class="form_login">
+<div class="form_login form_mdp">
     <?php the_content()?>
 </div>
 
