@@ -164,7 +164,7 @@ Menu Header
   z-index: 50;
   position: fixed;
   text-decoration: none;
-  width: 100%;
+  width: 100vw;
   padding: 2vh 0;
   height: 30px;
   font-size: 1.5rem;
@@ -361,7 +361,7 @@ style pour le menu des catégories sur loop
   background-color: #9546FF;
   color: #fafafa;
   font-size: 1rem;
-  padding: 0 2vw 2vh 2vw;
+  padding: 2vw 2vw 2vh 2vw;
 }
 
 /* style des liens du menu des lecons */
@@ -588,12 +588,13 @@ Page profil
 */
 
 /* Recadrage et style de la page profil */
-#post-122 {
+#post-122,
+#card_profil {
   max-width: 600px;
   margin: 10vh auto;
   background-color: #fafafa;
   border-radius: 25px;
-  padding: 2vh;
+  /* padding: 2vh; */
   box-shadow: 10px 10px 10px #6b656f80;
 }
 
@@ -1445,18 +1446,6 @@ Page 404
   color: #fafafa;
 }
 
-/* centrer l'image au milieu */
-.bloc_centre_img_404 {
-  display: flex;
-  justify-content: center;
-  padding-top: 5px;
-}
-
-/* redimensionement de l'image */
-.img_404 {
-  width: 500px;
-}
-
 
 
 
@@ -1514,7 +1503,7 @@ Page politique de confidentialité */
 @media (max-width: 900px) {
   .bot_espace {
     display: block;
-    height: 70px;
+    height: 100px;
   }
 }
 
@@ -1724,6 +1713,10 @@ Landing page */
   justify-content: center;
   align-items: center;
   background-color: #E1C6FF;
+}
+
+.bloc_bouton_landing a {
+  color: #7032CF;
 }
 
 .bloc_bouton_landing:hover,

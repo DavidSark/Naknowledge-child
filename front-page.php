@@ -14,10 +14,10 @@
         
         <div class="bloc_logo">
                 <div class="">
-                    <img class="logo_landing" src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/logo_naknow.svg" alt="logo de Naknowledge">
+                    <img class="logo_landing" src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/logo_naknow.svg" alt="logo de Naknowledge">
                 </div>
                 <div class="">
-                    <a class="inscription_landing" href="http://localhost/naknowledge/register/">S'inscrire</a>
+                    <a class="inscription_landing" href="https://davidsarkissian.fr/register/">S'inscrire</a>
                 </div>
         </div>
 
@@ -106,14 +106,14 @@
        
        <nav class="menu-footer landing_menu-footer">
 
-         <a href="http://localhost/naknowledge/">Naknowledge</a>
+         <a href="https://davidsarkissian.fr/">Naknowledge</a>
 
          <div class="footer_contact">
            <div class="footer_contact-items">
              
-             <img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/icone_insta.svg" alt="icone instgram">
-             <img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/icone_tiktok.svg" alt="icone tiktok ">
-             <img src="http://localhost/naknowledge/wp-content/themes/underscore-child/images/icones/icone_fb.svg" alt="icone facebool ">
+             <img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/icone_insta.svg" alt="icone instgram">
+             <img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/icone_tiktok.svg" alt="icone tiktok ">
+             <img src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/icones/icone_fb.svg" alt="icone facebool ">
            </div>
 
            <a href="#">naknowledge@gmail.com</a>

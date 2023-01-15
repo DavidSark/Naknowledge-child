@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <body class="body_404">
     <div class="">
@@ -12,10 +13,6 @@
         <p class="retour">
             <a  href="https://davidsarkissian.fr/naknowlecons/"> Retourner aux leçons.. </a>
         </p>
-
-        <div class="bloc_centre_img_404">
-            <img class="img_404" src="https://davidsarkissian.fr/wp-content/themes/underscore-child/images/img_404.svg" alt="image 404">
-        </div>
     </div>
     
 </body>
