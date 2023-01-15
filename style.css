@@ -437,15 +437,26 @@ style pour la page login et register
 
 /* fond du formulaire */
 .form_login {
-  border: 2px solid #6b656f;
   background-color: #fafafa;
   border-radius: 30px;
   margin: 5vh auto;
-  padding: 3vw;
+  padding: 5vw;
   max-width: 768px;
   font-family: 'Raleway';
   color: black;
   box-shadow: 10px 10px 10px #6b656f80;
+}
+
+/* bouton pour se connecter */
+.form_login input {
+  display: block;
+  margin: 2vh auto;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.5rem;
+  color: #fafafa;
+  background-color: #9546FF;
+  border: none;
+  border-radius: 20px;
 }
 
 /* label + input */
@@ -464,7 +475,8 @@ style pour la page login et register
 .form_login #user_email,
 .form_login #robo,
 .form_login #user_password,
-.form_login #user_avatar {
+.form_login #user_avatar,
+.form_login #username_email {
   background-color: #E1C6FF;
   opacity: 50%;
   border-radius: 20px;
@@ -485,22 +497,16 @@ style pour la page login et register
   border-color: #9546FF;
 }
 
+/* marge entre le text et le groupe du champs sur la page password-reset */
+#wpum-submit-password-recovery-form {
+  margin: 20px 0;
+}
+
 /* cacher le bouton "remember me" afficher par défaut */
 .form_login .fieldset-remember {
   display: none;
 }
 
-/* bouton pour se connecter */
-.form_login input {
-  display: block;
-  margin: 2vh auto;
-  padding: 1.5rem 2.5rem;
-  font-size: 1.5rem;
-  color: #fafafa;
-  background-color: #9546FF;
-  border: none;
-  border-radius: 20px;
-}
 
 /* texte vers condition d'utilisation... */
 .form_login .text_login {
