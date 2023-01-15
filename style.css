@@ -869,8 +869,8 @@ Page du formulaire pour ajouter des leçons*/
 }
 
 /* redimension de l'espace image */
-.acf-field-image {
-  height: min-content !important;
+#ajout_image {
+  margin-bottom: -300px;
 }
 
 /* media queries  */
@@ -954,13 +954,14 @@ bouton "voir plus"
 
 .ctis-load-more-container,
 .ctis-loader-elements {
-  margin: auto auto !important;
+  justify-content: center;
   background-color: #7032CF;
   font-family: "Reem Kufi";
   font-size: 1.5rem;
   color: #fafafa;
   padding: 1rem 2rem;
   border-radius: 10px;
+
 }
 
 
