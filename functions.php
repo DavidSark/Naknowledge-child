@@ -128,3 +128,6 @@ function fav_shortcode() {
     return '[wp-favorite-posts]';
  }
  add_shortcode( '[wp-favorite-posts]', 'fav_shortcode' );
+ 
+ 
+ add_filter('show_admin_bar', '__return_false');

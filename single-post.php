@@ -2,10 +2,11 @@
 <div class="top_espace"></div>
 
 <div class="header_post">
-    <button class="button_back" onclick="history.go(-1);"><img class="button_back-img" src="https://davidsarkissian/wp-content/themes/underscore-child/images/icones/icone_retour.png" alt="Bouton retour en arrière"></button>
+    <button class="button_back" onclick="history.go(-1);"><img class="button_back-img" src="https://davidsarkissian/naknowledge/wp-content/themes/underscore-child/images/icones/icone_retour.png" alt="Bouton retour en arrière"></button>
 </div>
 
 
+<div class="marge_page">
 <div class="single_post">
     <div class="lecon">
 
@@ -124,6 +125,7 @@
                 <?php get_template_part('parts/post', 'post'); ?>
 
                 <?php endwhile; ?>
+                </div>
             </div>
 
             <?php wp_reset_postdata(); ?>
