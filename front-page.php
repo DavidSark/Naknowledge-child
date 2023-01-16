@@ -56,8 +56,8 @@
                 <div class="bloc_info-deco deco_2"></div>
                 
                 <p class="info_text_paragraphe">Avec Naknowledge, apprenez quand vous voulez, où que vous soyez.</p>
-                <p class="info_text_paragraphe">Dans les transports en commun, durant votre pause du midi ou encore dans une salle d’attente, n’héstez plus et améliorez vos connaissances en quelques minutes.</p>
-                <p class="info_text_paragraphe">Que se sois sur votre pc, votre téléphone ou votre tablette, Naknowledge est là pour vous.</p>
+                <p class="info_text_paragraphe">Dans les transports en commun, durant votre pause du midi ou encore dans une salle d’attente, n’hésitez plus et améliorez vos connaissances en quelques minutes.</p>
+                <p class="info_text_paragraphe">Sur votre ordinateur, votre téléphone ou votre tablette, Naknowledge est là pour vous.</p>
             </div>
             
             
@@ -78,8 +78,8 @@
                 <div class="bloc_info-deco deco_1"></div>
                 <div class="bloc_info-deco deco_2"></div>
                 
-                <p class="info_text_paragraphe">Partagez vos connaissances en tout genres avec les autres utilisateurs !</p>
-                <p class="info_text_paragraphe">Offrez la possiblitées à n’importe qui d’apprendre.</p>
+                <p class="info_text_paragraphe">Partagez vos connaissances en tous genres avec les autres utilisateurs !</p>
+                <p class="info_text_paragraphe">Offrez la possibilité à n’importe qui d’apprendre.</p>
                 <p class="info_text_paragraphe">Rien de plus simple puisque Naknowledge vous aide à publier vos leçons pour qu’elles soient plus attractives.</p>
             </div>
             
